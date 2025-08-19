@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conoce a Max | Patitas Felices</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+        .gallery-image:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navbar -->
+    <nav class="bg-amber-600 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6b0cabf1-987f-465c-8fde-dbfd1aec7e18.png" 
+                         alt="Logo de Patitas Felices" class="h-12">
+                    <span class="font-bold text-xl">Patitas Felices</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="hover:text-amber-200 transition-all">Inicio</a>
+                    <a href="adopcion.html" class="hover:text-amber-200 transition-all">Adopta</a>
+                    <a href="hogares-temporales.html" class="hover:text-amber-200 transition-all">Hogar Temporal</a>
+                    <a href="apadrina.html" class="hover:text-amber-200 transition-all">Apadrina</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Dog Profile Header -->
+        <section class="bg-amber-50 py-12">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/3 mb-8 md:mb-0">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/90414d37-baa5-4c3e-8fe4-6fb4f31e5144.png" 
+                             alt="Max, un labrador dorado de 2 años con expresión alegre y juguetona"
+                             class="rounded-xl shadow-lg w-full h-auto max-h-96 object-cover">
+                    </div>
+                    <div class="md:w-2/3 md:pl-10">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h1 class="text-4xl font-bold text-gray-800">Max</h1>
+                                <div class="flex items-center mt-2">
+                                    <span class="bg-amber-600 text-white text-sm font-semibold px-3 py-1 rounded-full mr-2">Adopción</span>
+                                    <span class="text-gray-600">#ID: PF-2023-0425</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-gray-600 mr-2">Compartir:</span>
+                                <a href="#" class="text-amber-600 hover:text-amber-700 mx-1 transition-all">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="text-amber-600 hover:text-amber-700 mx-1 transition-all">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="text-amber-600 hover:text-amber-700 mx-1 transition-all">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+                            <div>
+                                <p class="text-gray-600">Edad</p>
+                                <p class="font-semibold">2 años</p>
+                            </div>
+                            <div>
+                                <p class="text-gray-600">Sexo</p>
+                                <p class="font-semibold">Macho</p>
+                            </div>
+                            <div>
+                                <p class="text-gray-600">Tamaño</p>
+                                <p class="font-semibold">Mediano</p>
+                            </div>
+                            <div>
+                                <p class="text-gray-600">Raza</p>
+                                <p class="font-semibold">Labrador</p>
+                            </div>
+                            <div>
+                                <p class="text-gray-600">Peso</p>
+                                <p class="font-semibold">28 kg</p>
+                            </div>
+                            <div>
+                                <p class="text-gray-600">Estado</p>
+                                <p class="font-semibold text-amber-600">Disponible</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded-lg shadow-sm mb-6">
+                            <h3 class="font-bold text-gray-800 mb-2">Historia de Max</h3>
+                            <p class="text-gray-600">
+                                Max fue rescatado de un albergue municipal donde llegó como perro callejero. A pesar de su difícil comienzo, es el perro más alegre y cariñoso que puedas imaginar. 
+                                Le encanta jugar, nadar y recibir mimos. Es perfecto para familias activas con niños ya que tiene mucha energía para gastar.
+                            </p>
+                        </div>
+                        
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="#formulario" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-lg text-center transition-all">
+                                ¡Quiero adoptar a Max!
+                            </a>
+                            <a href="apadrina.html" class="border border-amber-600 text-amber-600 hover:bg-amber-50 font-bold py-3 px-6 rounded-lg text-center transition-all">
+                                Apadrinar a Max
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Dog Details -->
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Characteristics -->
+                    <div class="md:col-span-2">
+                        <div class="bg-amber-50 p-6 rounded-lg shadow-sm mb-8">
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4">Personalidad y Comportamiento</h2>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <i class="fas fa-heart text-amber-600 mt-1 mr-3"></i>
+                                    <div>
+                                        <h3 class="font-semibold text-gray-800">Personalidad</h3>
+                                        <p class="text-gray-600">
+                                            Max es extremadamente amigable y sociable. Se lleva bien con personas de todas las edades, otros perros e incluso gatos 
+                                            (aunque puede ser un poco juguetón con ellos). Es un perro leal que forma fuertes vínculos con su familia.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-home text-amber-600 mt-1 mr-3"></i>
+                                    <div>
+                                        <h3 class="font-semibold text-gray-800">Comportamiento en casa</h3>
+                                        <p class="text-gray-600">
+                                            Está acostumbrado a vivir tanto en casas como departamentos mientras tenga suficiente ejercicio. No es destructivo 
+                                            pero puede ponerse ansioso si se queda solo por mucho tiempo. Ya está entrenado para hacer sus necesidades fuera.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-bone text-amber-600 mt-1 mr-3"></i>
+                                    <div>
+                                        <h3 class="font-semibold text-gray-800">Nivel de actividad</h3>
+                                        <p class="text-gray-600">
+                                            Alto - Necesita al menos 60-90 minutos de ejercicio al día. Perfecto para correr, caminatas largas o deportes caninos. 
+                                            Le encanta nadar y jugar a buscar la pelota.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Health Section -->
+                        <div class="bg-amber-50 p-6 rounded-lg shadow-sm mb-8">
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4">Salud y Cuidados</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <h3 class="font-semibold text-gray-800 mb-2">Estado de salud</h3>
+                                    <ul class="space-y-2 text-gray-600">
+                                        <li class="flex items-center">
+                                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                            Esterilizado
+                                        </li>
+                                        <li class="flex items-center">
+                                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                            Vacunación completa
+                                        </li>
+                                        <li class="flex items-center">
+                                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                            Desparasitado
+                                        </li>
+                                        <li class="flex items-center">
+                                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                            Microchip
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800 mb-2">Cuidados especiales</h3>
+                                    <ul class="space-y-2 text-gray-600">
+                                        <li class="flex items-center">
+                                            <i class="fas fa-notes-medical text-amber-600 mr-2"></i>
+                                            Chequeo anual de cadera (tendencia labrador)
+                                        </li>
+                                        <li class="flex items-center">
+                                            <i class="fas fa-utensils text-amber-600 mr-2"></i>
+                                            Dieta controlada para peso saludable
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mt-6">
+                                <h3 class="font-semibold text-gray-800 mb-2">Historial médico</h3>
+                                <p class="text-gray-600">
+                                    Max fue tratado por una infección en la piel al ser rescatado que ya está completamente curada. Tiene una ligera displasia 
+                                    de cadera que no afecta su movilidad actualmente pero deberá ser monitoreada anualmente.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Gallery -->
+                        <div class="bg-amber-50 p-6 rounded-lg shadow-sm">
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4">Galería de Max</h2>
+                            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/90414d37-baa5-4c3e-8fe4-6fb4f31e5144.png" 
+                                     alt="Max jugando en el parque con una pelota en la boca"
+                                     class="gallery-image rounded-lg object-cover h-40 w-full transition-all cursor-pointer">
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3c6deba9-d481-4695-bc7e-d2f0ae4c5267.png" 
+                                     alt="Max descansando en el césped con expresión relajada"
+                                     class="gallery-image rounded-lg object-cover h-40 w-full transition-all cursor-pointer">
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e8c8dc8a-5b6a-4faf-8054-0fa5b75fe754.png" 
+                                     alt="Max en el veterinario durante su último chequeo de salud"
+                                     class="gallery-image rounded-lg object-cover h-40 w-full transition-all cursor-pointer">
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9754f332-2db5-415a-bec9-ed6b4f7bc5a5.png" 
+                                     alt="Max jugando con otros perros en el área social del refugio"
+                                     class="gallery-image rounded-lg object-cover h-40 w-full transition-all cursor-pointer">
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a5fe834d-59ab-41dd-8f1e-4b52bcc79886.png" 
+                                     alt="Max descansando en su cama favorita del refugio"
+                                     class="gallery-image rounded-lg object-cover h-40 w-full transition-all cursor-pointer">
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3c6deba9-d481-4695-bc7e-d2f0ae4c5267.png" 
+                                     alt="Max durante su sesión de entrenamiento de obediencia básica"
+                                     class="gallery-image rounded-lg object-cover h-40 w-full transition-all cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Adoption Info Sidebar -->
+                    <div>
+                        <div class="bg-amber-50 p-6 rounded-lg shadow-sm sticky top-4 mb-6">
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4">Adopta a Max</h2>
+                            
+                            <div class="space-y-4 mb-6">
+                                <div>
+                                    <p class="text-gray-600">Costo de adopción:</p>
+                                    <p class="text-2xl font-bold text-amber-600">$1,500 MXN</p>
+                                    <p class="text-sm text-gray-500">Incluye esterilización, vacunas, microchip y primera consulta gratuita</p>
+                                </div>
+                                <div class="border-t border-gray-200 pt-4">
+                                    <p class="text-gray-600">Proceso de adopción:</p>
+                                    <ol class="list-decimal list-inside space-y-2 text-gray-600">
+                                        <li>Llenar formulario</li>
+                                        <li>Entrevista telefónica</li>
+                                        <li>Conocer a Max</li>
+                                        <li>Firma de contrato</li>
+                                        <li>¡Llevártelo a casa!</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white p-4 rounded-lg mb-6">
+                                <h3 class="font-bold text-gray-800 mb-2">¿Es Max ideal para ti?</h3>
+                                <ul class="space-y-2 text-gray-600 text-sm">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                        <span>Familias activas o con niños mayores de 6 años</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                        <span>Personas que disfruten actividades al aire libre</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-times text-red-500 mt-1 mr-2"></i>
+                                        <span>No recomendado para dueños primerizos o sedentarios</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="bg-white p-4 rounded-lg mb-6">
+                                <h3 class="font-bold text-gray-800 mb-2">Disponibilidad para visita</h3>
+                                <p class="text-gray-600 mb-2">Puedes venir a conocer a Max en nuestro refugio:</p>
+                                <p class="font-semibold">Martes a Domingo, 10am a 4pm</p>
+                                <p class="text-sm text-gray-500">(Cita preferente por formulario)</p>
+                            </div>
+                            
+                            <a href="tel:+525512345678" class="inline-flex items-center justify-center w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-lg transition-all mb-4">
+                                <i class="fas fa-phone mr-2"></i> Llamar para más información
+                            </a>
+                            <a href="https://maps.google.com" target="_blank" class="inline-flex items-center justify-center w-full border border-amber-600 text-amber-600 hover:bg-amber-50 font-bold py-3 px-6 rounded-lg transition-all">
+                                <i class="fas fa-map-marker-alt mr-2"></i> Cómo llegar al refugio
+                            </a>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <h3 class="font-bold text-gray-800 mb-4">Testimonios de cuidadores</h3>
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="flex items-center mb-2">
+                                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0c2d1dc4-c814-46e7-94c1-57411439651f.png" 
+                                             alt="Andrea, cuidadora principal de Max en el refugio"
+                                             class="w-10 h-10 rounded-full object-cover mr-3">
+                                        <span class="font-semibold">Andrea</span>
+                                    </div>
+                                    <p class="text-gray-600 text-sm italic">
+                                        "Max es mi favorito en el refugio. Cada mañana me recibe con su pelota favorita en la boca listo para jugar. Será un compañero increíble para la familia adecuada."
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class="flex items-center mb-2">
+                                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b1c47a62-ea15-4a22-8047-3b30c4c6790b.png" 
+                                             alt="Dr. Carlos, veterinario de Max"
+                                             class="w-10 h-10 rounded-full object-cover mr-3">
+                                        <span class="font-semibold">Dr. Carlos</span>
+                                    </div>
+                                    <p class="text-gray-600 text-sm italic">
+                                        "Aunque tuvo un comienzo difícil, Max está en excelente salud ahora. Es un perro fuerte que solo necesita ejercicio regular y controles anuales de cadera."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Adoption Form -->
+        <section id="formulario" class="py-12 bg-amber-50">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">Formulario de Adopción</h2>
+                    <p class="text-center text-gray-600 mb-8">Estás a un paso de darle un hogar a Max</p>
+                    
+                    <form class="space-y-6">
+                        <div class="bg-gray-50 p-4 rounded-lg mb-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Información Personal</h3>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="nombre" class="block text-gray-700 font-medium mb-2">Nombre Completo *</label>
+                                    <input type="text" id="nombre" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent" required>
+                                </div>
+                                <div>
+                                    <label for="edad" class="block text-gray-700 font-medium mb-2">Edad *</label>
+                                    <input type="number" id="edad" min="18" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent" required>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 font-medium mb-2">Email *</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent" required>
+                                </div>
+                                <div>
+                                    <label for="telefono" class="block text-gray-700 font-medium mb-2">Teléfono *</label>
+                                    <input type="tel" id="telefono" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent" required>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-4 rounded-lg mb-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Información del Hogar</h3>
+                            <div class="space-y-6">
+                                <div>
+                                    <label for="direccion" class="block text-gray-700 font-medium mb-2">Dirección Completa *</label>
+                                    <input type="text" id="direccion" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent" required>
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-gray-700 font-medium mb-2">Tipo de Vivienda *</label>
+                                    <div class="grid sm:grid-cols-3 gap-4">
+                                        <div class="flex items-center">
+                                            <input type="radio" id="casa" name="vivienda" value="casa" class="mr-2" required>
+                                            <label for="casa">Casa</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input type="radio" id="departamento" name="vivienda" value="departamento" class="mr-2">
+                                            <label for="departamento">Departamento</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input type="radio" id="otro" name="vivienda" value="otro" class="mr-2">
+                                            <label for="otro">Otro</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <label for="permiso" class="block text-gray-700 font-medium mb-2">¿Tienes permiso para tener mascotas? *</label>
+                                    <select id="permiso" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent" required>
+                                        <option value="" disabled selected>Selecciona una opción</option>
+                                        <option value="si">Sí, tengo permiso explícito</option>
+                                        <option value="no">No, no tengo permiso</option>
+                                        <option value="no-se">No estoy seguro</option>
+                                    </select>
+                                </div>
+                                
+                                <div>
+                                    <label for="responsable" class="block text-gray-700 font-medium mb-2">Personas en el hogar (edades) *</label>
+                                    <textarea id="responsable" rows="2" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent" required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-4 rounded-lg mb-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Experiencia con Mascotas</h3>
+                            <div class="space-y-6">
+                                <div>
+                                    <label for="mascotas" class="block text-gray-700 font-medium mb-2">¿Tienes otras mascotas? *</label>
+                                    <select id="mascotas" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent" required>
+                                        <option value="" disabled selected>Selecciona una opción</option>
+                                        <option value="si-perros">Sí, perros</option>
+                                        <option value="si-gatos">Sí, gatos</option>
+                                        <option value="si-otros">Sí, otros animales</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </div>
+                                
+                                <div>
+                                    <label for="experiencia" class="block text-gray-700 font-medium mb-2">¿Has tenido mascotas antes? Descríbelo *</label>
+                                    <textarea id="experiencia" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent" required></textarea>
+                                </div>
+                                
+                                <div>
+                                    <label for="razones" class="block text-gray-700 font-medium mb-2">¿Por qué quieres adoptar a Max específicamente? *</label>
+                                    <textarea id="razones" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent" required></textarea>
+                                </div>
+                                
+                                <div>
+                                    <label for="tiempo" class="block text-gray-700 font-medium mb-2">¿Cuánto tiempo pasaría Max solo diariamente? *</label>
+                                    <select id="tiempo" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent" required>
+                                        <option value="" disabled selected>Selecciona una opción</option>
+                                        <option value="menos4">Menos de 4 horas</option>
+                                        <option value="4a8">4 a 8 horas</option>
+                                        <option value="mas8">Más de 8 horas</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex items-start">
+                                <input type="checkbox" id="terminos" class="mt-1 mr-2" required>
+                                <label for="terminos" class="text-gray-600 text-sm">
+                                    Acepto los términos y condiciones de adopción. Entiendo que Patitas Felices se reserva el derecho de aprobar o rechazar 
+                                    esta solicitud según lo considere conveniente para el bienestar de Max, y que se podrá realizar una visita al hogar para verificar 
+                                    las condiciones de vida.
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center pt-6">
+                            <button type="submit" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-lg transition-all">
+                                Enviar Solicitud de Adopción
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Other Dogs -->
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Otros Peludos que Esperan un Hogar</h2>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Dog 1 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md border border-gray-100">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/661e0bc7-8a97-49bd-b76e-97c76c90cfc0.png" 
+                             alt="Luna, perrita mestiza de tamaño mediano"
+                             class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Luna</h3>
+                            <div class="flex items-center mb-4">
+                                <span class="bg-gray-100 text-gray-800 text-xs font-semibold px-2.5 py-0.5 rounded">3 años</span>
+                                <span class="ml-2 text-gray-600">Mestiza</span>
+                            </div>
+                            <a href="perfil-luna.html" class="inline-block w-full bg-amber-600 hover:bg-amber-700 text-white text-center py-2 px-4 rounded-lg transition-all">
+                                Conoce a Luna
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Dog 2 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md border border-gray-100">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7b1c76aa-41f4-4a2e-8ad7-403dc5917c9e.png" 
+                             alt="Rocky, cachorro labrador mezcla con golden"
+                             class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Rocky</h3>
+                            <div class="flex items-center mb-4">
+                                <span class="bg-gray-100 text-gray-800 text-xs font-semibold px-2.5 py-0.5 rounded">5 meses</span>
+                                <span class="ml-2 text-gray-600">Labrador mix</span>
+                            </div>
+                            <a href="perfil-rocky.html" class="inline-block w-full bg-amber-600 hover:bg-amber-700 text-white text-center py-2 px-4 rounded-lg transition-all">
+                                Conoce a Rocky
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Dog 3 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md border border-gray-100">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8a84e1dc-e5cb-42dd-b96d-ec889ce66cfc.png" 
+                             alt="Toby, beagle adulto con expresión curiosa"
+                             class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Toby</h3>
+                            <div class="flex items-center mb-4">
+                                <span class="bg-gray-100 text-gray-800 text-xs font-semibold px-2.5 py-0.5 rounded">5 años</span>
+                                <span class="ml-2 text-gray-600">Beagle</span>
+                            </div>
+                            <a href="perfil-toby.html" class="inline-block w-full bg-amber-600 hover:bg-amber-700 text-white text-center py-2 px-4 rounded-lg transition-all">
+                                Conoce a Toby
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Patitas Felices</h3>
+                    <p class="text-gray-400">Desde 2015 rescatando, rehabilitando y encontrando hogares para perritos en situación de calle.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Enlaces</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-all">Inicio</a></li>
+                        <li><a href="adopcion.html" class="text-gray-400 hover:text-white transition-all">Adopta</a></li>
+                        <li><a href="hogares-temporales.html" class="text-gray-400 hover:text-white transition-all">Hogar Temporal</a></li>
+                        <li><a href="apadrina.html" class="text-gray-400 hover:text-white transition-all">Apadrina</a></li>
+                        <li><a href="donaciones.html" class="text-gray-400 hover:text-white transition-all">Donaciones</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contacto</h4>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Av. Revolución 1050, CDMX</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone-alt mr-2"></i> 55 1234 5678</p>
+                    <p class="text-gray-400"><i class="fas fa-envelope mr-2"></i> contacto@patitasfelices.org</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-all"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-all"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-all"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-all"><i class="fab fa-youtube text-xl"></i></a>
+                    </div>
+                    <div class="mt-4">
+                        <h4 class="font-bold mb-2">Newsletter</h4>
+                        <div class="flex">
+                            <input type="email" placeholder="Tu email" class="px-3 py-2 text-gray-800 rounded-l-lg w-full">
+                            <button class="bg-amber-600 hover:bg-amber-700 px-4 rounded-r-lg transition-all">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 Patitas Felices. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple gallery functionality
+        document.querySelectorAll('.gallery-image').forEach(img => {
+            img.addEventListener('click', function() {
+                // In a real implementation, this would open a modal with the full-size image
+                const src = this.getAttribute('src');
+                const alt = this.getAttribute('alt');
+                alert(`Mostrando imagen ampliada: ${alt}\nURL: ${src}`);
+            });
+        });
+    </script>
+</body>
+</html>
