@@ -1,14 +1,17 @@
-Termina con la pagina al dar click en saber mas de hogar temporal 
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hogares Temporales | Patitas Felices</title>
+    <title>Abrigando A Los Cañetañitos</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f9b5808f-5e3e-4878-98d0-439236b067b1.png');
+            background-size: cover;
+            background-position: center;
+        }
         .step-card:hover .step-icon {
             transform: rotate(-5deg) scale(1.1);
         }
@@ -29,15 +32,12 @@ Termina con la pagina al dar click en saber mas de hogar temporal
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-4">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6b0cabf1-987f-465c-8fde-dbfd1aec7e18.png" alt="Logo de Patitas Felices - huella de perro en círculo amarillo" class="h-12">
-                    <span class="font-bold text-xl">Patitas Felices</span>
+                    <img src="https://edwardmedran.github.io/Abrigando/img/LogoAbrigando.jpg" alt="Logo de Patitas Felices - huella de perro en círculo amarillo" class="h-12">
+                    <span class="font-bold text-xl">Abrigando A Los Cañetañitos</span>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html#inicio" class="hover:text-amber-200 transition-all">Inicio</a>
-                    <a href="index.html#nosotros" class="hover:text-amber-200 transition-all">Nosotros</a>
-                    <a href="adopcion.html" class="hover:text-amber-200 transition-all">Adopta</a>
-                    <a href="hogares-temporales.html" class="hover:text-amber-200 transition-all font-bold">Hogar Temporal</a>
-                    <a href="index.html#contacto" class="hover:text-amber-200 transition-all">Contacto</a>
+                    <a href="https://edwardmedran.github.io/Abrigando/index.html" class="hover:text-amber-200 transition-all">Inicio</a>
+                    <a href="https://edwardmedran.github.io/Abrigando/menús/eligeTuPeludo.html" class="hover:text-amber-200 transition-all">Adopta</a>
                 </div>
                 <button class="md:hidden focus:outline-none">
                     <i class="fas fa-bars text-2xl"></i>
@@ -47,7 +47,7 @@ Termina con la pagina al dar click en saber mas de hogar temporal
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-amber-600 text-white py-20">
+    <section class="hero h-screen flex items-center justify-center text-center text-white">
         <div class="container mx-auto px-6 text-center">
             <h1 class="text-4xl md:text-5xl font-bold mb-6">Conviértete en Hogar Temporal</h1>
             <p class="text-xl mb-8 max-w-3xl mx-auto">Proporciona amor y cuidados temporales a un perrito rescatado mientras encuentra su hogar definitivo.</p>
@@ -362,22 +362,21 @@ Termina con la pagina al dar click en saber mas de hogar temporal
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Patitas Felices</h3>
+                    <h3 class="text-xl font-bold mb-4">Abrigando A Los Cañetañitos</h3>
                     <p class="text-gray-400">Rescatando y transformando vidas desde 2015.</p>
                 </div>
                 <div>
                     <h4 class="font-bold mb-4">Enlaces Rápidos</h4>
                     <ul class="space-y-2">
-                        <li><a href="index.html#inicio" class="text-gray-400 hover:text-white transition-all">Inicio</a></li>
-                        <li><a href="index.html#nosotros" class="text-gray-400 hover:text-white transition-all">Nosotros</a></li>
-                        <li><a href="adopcion.html" class="text-gray-400 hover:text-white transition-all">Adopta</a></li>
-                        <li><a href="hogares-temporales.html" class="text-gray-400 hover:text-white transition-all">Hogar Temporal</a></li>
-                        <li><a href="index.html#contacto" class="text-gray-400 hover:text-white transition-all">Contacto</a></li>
+                        <li><a href="https://edwardmedran.github.io/Abrigando/index.html" class="text-gray-400 hover:text-white transition-all">Inicio</a></li>
+                        <li><a href="https://edwardmedran.github.io/Abrigando/menús/apadrina.html" class="text-gray-400 hover:text-white transition-all">Apadrina</a></li>
+                        <li><a href="https://edwardmedran.github.io/Abrigando/menús/donación.html" class="text-gray-400 hover:text-white transition-all">Donación</a></li>
+                        <li><a href="https://edwardmedran.github.io/Abrigando/menús/eligeTuPeludo.html" class="text-gray-400 hover:text-white transition-all">Elige tu Peludo</a></li>
                     </ul>
                 </div>
                 <div>
@@ -385,19 +384,9 @@ Termina con la pagina al dar click en saber mas de hogar temporal
                     <p class="text-gray-400">Refugio: Martes a Domingo<br>10:00 am - 6:00 pm</p>
                     <p class="text-gray-400 mt-2">Oficinas: Lunes a Viernes<br>9:00 am - 5:00 pm</p>
                 </div>
-                <div>
-                    <h4 class="font-bold mb-4">Newsletter</h4>
-                    <p class="text-gray-400 mb-4">Suscríbete para recibir noticias y actualizaciones.</p>
-                    <div class="flex">
-                        <input type="email" placeholder="Tu email" class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-800 w-full">
-                        <button class="bg-amber-600 hover:bg-amber-700 px-4 rounded-r-lg transition-all">
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </div>
-                </div>
             </div>
             <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                <p>© 2023 Patitas Felices. Todos los derechos reservados.</p>
+                <p>© 2025 Abrigando A Los Cañetañitos. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
