@@ -3,73 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abrigando A Los Cañetañitos</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Abrigando A Los Cañetañitos | Inicio</title>
+    <link rel="icon" href="../img/LogoAbrigando.jpg" type="image/jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="font-sans bg-gray-50">
-    <!-- Navbar -->
-    <nav class="bg-amber-600 text-white shadow-lg">
-        <div class="container mx-auto px-6 py-3">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center space-x-4">
-                    <img src="https://edwardmedran.github.io/Abrigando/img/LogoAbrigando.jpg" alt="Logo de Abrigando A Los Cañetañitos" class="h-12">
-                    <span class="font-bold text-xl">Abrigando A Los Cañetañitos</span>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#inicio" class="hover:text-amber-200 transition-all">Inicio</a>
-                    <a href="#nosotros" class="hover:text-amber-200 transition-all">Nosotros</a>
-                    <a href="#adopta" class="hover:text-amber-200 transition-all">Adopta</a>
-                    <a href="#ayuda" class="hover:text-amber-200 transition-all">Cómo Ayudar</a>
-                    <a href="#contacto" class="hover:text-amber-200 transition-all">Contacto</a>
-                </div>
-                <button class="md:hidden focus:outline-none">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="https://edwardmedran.github.io/Abrigando/img/LogoAbrigando.jpg" alt="Logo Abrigando">
+                <span>Abrigando A Los Cañetañitos</span>
+            </div>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            <div class="nav-links">
+                <a href="#inicio" class="active">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="menús/eligeTuPeludo.html">Adopta</a>
+                <a href="#ayuda">Cómo Ayudar</a>
+                <a href="#contacto">Contacto</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="inicio" class="hero h-screen flex items-center justify-center text-center text-white">
-        <div class="container mx-auto px-6">
-            <h1 class="text-5xl font-bold mb-6">Dale una segunda oportunidad</h1>
-            <p class="text-xl mb-8 max-w-2xl mx-auto">Rescatamos, rehabilitamos y buscamos hogares amorosos para perritos en situación de calle.</p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#adopta" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-full transition-all">Adopta</a>
-                <a href="#ayuda" class="bg-white hover:bg-gray-100 text-amber-600 font-bold py-3 px-6 rounded-full transition-all">Cómo Ayudar</a>
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Dale una segunda <br> <span class="highlight">oportunidad de vida</span></h1>
+            <p>Rescatamos, rehabilitamos y buscamos hogares amorosos para perritos que lo han perdido todo.</p>
+            <div class="hero-buttons">
+                <a href="menús/eligeTuPeludo.html" class="btn btn-primary">Adoptar ahora <i class="fas fa-paw"></i></a>
+                <a href="#ayuda" class="btn btn-secondary">Cómo Ayudar</a>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="nosotros" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Nuestra Misión</h2>
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6f422706-759e-433a-b727-82dd61b06f61.png" alt="Grupo de voluntarios acariciando y jugando con perritos rescatados en un parque soleado" class="rounded-lg shadow-xl">
+    <section id="nosotros" class="section">
+        <div class="container">
+            <h2 class="section-title">Nuestra Misión</h2>
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6f422706-759e-433a-b727-82dd61b06f61.png" alt="Voluntarios con perros">
                 </div>
-                <div class="md:w-1/2">
-                    <p class="text-gray-600 mb-6 text-lg">
-                        En <span class="font-bold text-amber-600">Abrigando A Los Cañetañitos</span> nos dedicamos a rescatar perritos en situación de calle, brindándoles atención médica, alimentación y mucho amor mientras encontramos para ellos un hogar definitivo.
-                    </p>
-                    <p class="text-gray-600 mb-6 text-lg">
-                        Desde 2015 hemos logrado rescatar más de 1,200 perritos y hemos encontrado familias amorosas para el 85% de ellos.
-                    </p>
-                    <div class="flex flex-wrap gap-4 mt-8">
-                        <div class="bg-amber-50 p-4 rounded-lg flex items-center">
-                            <i class="fas fa-paw text-amber-600 text-2xl mr-3"></i>
-                            <span class="font-semibold">1,200+ Rescates</span>
+                <div class="about-text">
+                    <p class="lead">En <strong>Abrigando A Los Cañetañitos</strong> nos dedicamos a transformar el dolor en esperanza.</p>
+                    <p>Desde 2015 hemos logrado rescatar más de 1,200 perritos de las calles, brindándoles atención médica, alimento y un refugio seguro.</p>
+                    
+                    <div class="stats-container">
+                        <div class="stat-card">
+                            <i class="fas fa-paw"></i>
+                            <h3>1,200+</h3>
+                            <p>Rescates</p>
                         </div>
-                        <div class="bg-amber-50 p-4 rounded-lg flex items-center">
-                            <i class="fas fa-home text-amber-600 text-2xl mr-3"></i>
-                            <span class="font-semibold">85% Adopciones</span>
-                        </div>
-                        <div class="bg-amber-50 p-4 rounded-lg flex items-center">
-                            <i class="fas fa-heart text-amber-600 text-2xl mr-3"></i>
-                            <span class="font-semibold">10 Voluntarios</span>
+                        <div class="stat-card">
+                            <i class="fas fa-home"></i>
+                            <h3>85%</h3>
+                            <p>Adoptados</p>
                         </div>
                     </div>
                 </div>
@@ -77,301 +68,133 @@
         </div>
     </section>
 
-    <!-- Dogs for Adoption -->
-    <section id="adopta" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center text-gray-800 mb-4">Nuestros Peludos en Busca de Hogar</h2>
-            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Conoce a estos angelitos que esperan una familia que los ame incondicionalmente.</p>
+    <section id="adopta" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Esperando un Hogar</h2>
+            <p class="section-subtitle">Conoce a estos angelitos que buscan una familia.</p>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Dog Card 1 -->
-                <div class="dog-card bg-white rounded-lg overflow-hidden shadow-md transition-all">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/90414d37-baa5-4c3e-8fe4-6fb4f31e5144.png" alt="Perrito labrador dorado joven sonriendo con lengua afuera en un parque" class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Max</h3>
-                        <div class="flex items-center mb-4">
-                            <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded">Macho</span>
-                            <span class="ml-2 text-gray-600">2 años</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Max es un labrador lleno de energía que adora jugar y correr. Se lleva bien con niños y otros perros.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="font-bold text-amber-600">Disponible</span>
-                            <a class="bg-amber-600 hover:bg-amber-700 text-white py-2 px-4 rounded-full transition-all text-sm" href="https://edwardmedran.github.io/Abrigando/peludos/peludo1.html">
-                                Conocer más
-                            </a>
+            <div class="dogs-grid">
+                <article class="dog-card">
+                    <div class="card-image">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/90414d37-baa5-4c3e-8fe4-6fb4f31e5144.png" alt="Max">
+                        <span class="tag tag-male">Macho</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Max</h3>
+                        <p class="age">2 años • Labrador Mix</p>
+                        <p class="desc">Max es energía pura. Adora correr y jugar con niños. Ideal para familias activas.</p>
+                        <div class="card-footer">
+                            <a href="peludo1.html" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
-                </div>
+                </article>
                 
-                <!-- Dog Card 2 -->
-                <div class="dog-card bg-white rounded-lg overflow-hidden shadow-md transition-all">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/661e0bc7-8a97-49bd-b76e-97c76c90cfc0.png" alt="Perrita mestiza pequeña de color negro con blanco mirando con curiosidad a la cámara" class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Luna</h3>
-                        <div class="flex items-center mb-4">
-                            <span class="bg-pink-100 text-pink-800 text-xs font-semibold px-2.5 py-0.5 rounded">Hembra</span>
-                            <span class="ml-2 text-gray-600">3 años</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Luna es tranquila y cariñosa. Perfecta para personas que buscan compañía tranquila y amorosa.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="font-bold text-amber-600">Disponible</span>
-                            <a class="bg-amber-600 hover:bg-amber-700 text-white py-2 px-4 rounded-full transition-all text-sm" href="https://edwardmedran.github.io/Abrigando/peludos/peludo2.html">
-                                Conocer más
-                            </a>
+                <article class="dog-card">
+                    <div class="card-image">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/661e0bc7-8a97-49bd-b76e-97c76c90cfc0.png" alt="Luna">
+                        <span class="tag tag-female">Hembra</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Luna</h3>
+                        <p class="age">3 años • Mestiza</p>
+                        <p class="desc">Tranquila y cariñosa. Perfecta para quienes buscan compañía serena.</p>
+                        <div class="card-footer">
+                            <a href="peludo2.html" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
-                </div>
+                </article>
                 
-                <!-- Dog Card 3 -->
-                <div class="dog-card bg-white rounded-lg overflow-hidden shadow-md transition-all">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8a84e1dc-e5cb-42dd-b96d-ec889ce66cfc.png" alt="Perrito beagle adulto con expresión juguetona sentado en el pasto" class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Toby</h3>
-                        <div class="flex items-center mb-4">
-                            <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded">Macho</span>
-                            <span class="ml-2 text-gray-600">5 años</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Toby es un beagle con mucha personalidad. Le encanta seguir olores y dar largos paseos.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="font-bold text-amber-600">Disponible</span>
-                            <a class="bg-amber-600 hover:bg-amber-700 text-white py-2 px-4 rounded-full transition-all text-sm" href="https://edwardmedran.github.io/Abrigando/peludos/peludo3.html">
-                                Conocer más
-                            </a>
+                <article class="dog-card">
+                    <div class="card-image">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8a84e1dc-e5cb-42dd-b96d-ec889ce66cfc.png" alt="Toby">
+                        <span class="tag tag-male">Macho</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Toby</h3>
+                        <p class="age">5 años • Beagle</p>
+                        <p class="desc">Un explorador nato. Le encantan los paseos largos y olfatear todo.</p>
+                        <div class="card-footer">
+                            <a href="peludo3.html" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
             
-            <div class="text-center mt-12">
-                <a href="https://edwardmedran.github.io/Abrigando/menús/eligeTuPeludo.html" class="inline-block bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-full transition-all">
-                    Ver todos los peludos
-                </a>
+            <div class="center-btn">
+                <a href="menús/eligeTuPeludo.html" class="btn btn-outline">Ver todos los peludos</a>
             </div>
         </div>
     </section>
 
-    <!-- How to Help -->
-    <section id="ayuda" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Cómo Puedes Ayudar</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Help Option 1 -->
-                <div class="bg-gray-50 p-8 rounded-lg text-center transition-all hover:shadow-lg">
-                    <div class="bg-amber-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-home text-amber-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Hogar Temporal</h3>
-                    <p class="text-gray-600">Ofrece un hogar temporal a un perrito mientras encuentra familia definitiva. Nosotros cubrimos todos los gastos.</p>
-                    <a class="mt-4 text-amber-600 font-semibold hover:text-amber-700 transition-all" href="https://edwardmedran.github.io/Abrigando/menús/hogarTemporal.html">
-                        Saber más →
-                    </a>
+    <section id="ayuda" class="section">
+        <div class="container">
+            <h2 class="section-title">¿Cómo Puedes Ayudar?</h2>
+            <div class="help-grid">
+                <div class="help-card">
+                    <div class="icon-circle"><i class="fas fa-home"></i></div>
+                    <h3>Hogar Temporal</h3>
+                    <p>Dales techo mientras encuentran su familia definitiva. Nosotros cubrimos los gastos.</p>
+                    <a href="menús/hogarTemporal.html" class="read-more">Saber más</a>
                 </div>
-                
-                <!-- Help Option 2 -->
-                <div class="bg-gray-50 p-8 rounded-lg text-center transition-all hover:shadow-lg">
-                    <div class="bg-amber-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-hand-holding-heart text-amber-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Apadrina</h3>
-                    <p class="text-gray-600">Apadrina a uno de nuestros residentes permanentes con una contribución mensual para su cuidado.</p>
-                    <a class="mt-4 text-amber-600 font-semibold hover:text-amber-700 transition-all" href="https://edwardmedran.github.io/Abrigando/menús/apadrina.html">
-                        Saber más →
-                    </a>
+                <div class="help-card">
+                    <div class="icon-circle"><i class="fas fa-hand-holding-heart"></i></div>
+                    <h3>Apadrina</h3>
+                    <p>Ayuda mensualmente a los perritos que viven permanentemente en el refugio.</p>
+                    <a href="menús/apadrina.html" class="read-more">Saber más</a>
                 </div>
-                
-                <!-- Help Option 3 -->
-                <div class="bg-gray-50 p-8 rounded-lg text-center transition-all hover:shadow-lg">
-                    <div class="bg-amber-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-donate text-amber-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Donaciones</h3>
-                    <p class="text-gray-600">Cualquier cantidad ayuda a cubrir gastos veterinarios, alimento y mantenimiento del refugio.</p>
-                    <a class="mt-4 text-amber-600 font-semibold hover:text-amber-700 transition-all" href="https://edwardmedran.github.io/Abrigando/menús/donación.html">
-                        Saber más →
-                    </a>
+                <div class="help-card">
+                    <div class="icon-circle"><i class="fas fa-donate"></i></div>
+                    <h3>Donaciones</h3>
+                    <p>Tu aporte económico o en especies nos permite seguir salvando vidas.</p>
+                    <a href="menús/donación.html" class="read-more">Saber más</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Success Stories -->
-    <section class="py-20 bg-amber-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Historias de Éxito</h2>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <!-- Story 1 -->
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <div class="flex items-center mb-6">
-                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/95885134-14e8-4968-af1d-5cd4ae052e7d.png" alt="Familia sonriente con su perro adoptado, un golden retriever adulto" class="w-20 h-20 rounded-full object-cover">
-                        <div class="ml-4">
-                            <h4 class="font-bold text-gray-800">Familia Rodríguez</h4>
-                            <p class="text-gray-600">Adoptaron a Rocky en 2020</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic">
-                        "Rocky llegó a nuestras vidas cuando más lo necesitábamos. Después de perder a nuestro perro anterior, no estábamos seguros de estar listos, pero conocer a Rocky fue amor a primera vista. Ha llenado nuestro hogar de alegría y travesuras."
-                    </p>
-                </div>
-                
-                <!-- Story 2 -->
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <div class="flex items-center mb-6">
-                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c2c0714d-963c-491d-a7e8-93fdb5679514.png" alt="Joven universitario abrazando a su perrita mestiza pequeña en un parque" class="w-20 h-20 rounded-full object-cover">
-                        <div class="ml-4">
-                            <h4 class="font-bold text-gray-800">Carlos Martínez</h4>
-                            <p class="text-gray-600">Adoptó a Lola en 2021</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic">
-                        "Como estudiante que vive solo, Lola ha sido mi mejor compañía. Al principio tenía miedo de no poder darle todo lo que necesitaba, pero el equipo de Patitas Felices me apoyó en todo el proceso. Ahora no puedo imaginar mi vida sin sus lamidas mañaneras."
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Form -->
-    <section id="contacto" class="py-20 bg-white">
-        <div class="container mx-auto px-6 max-w-4xl">
-            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Contáctanos</h2>
-            
-            <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
-                <div class="md:flex">
-                    <div class="md:w-1/2 bg-amber-600 text-white p-8">
-                        <h3 class="text-2xl font-bold mb-4">Información de Contacto</h3>
-                        <div class="mb-6">
-                            <div class="flex items-start mb-4">
-                                <i class="fas fa-map-marker-alt mt-1 mr-4"></i>
-                                <div>
-                                    <h4 class="font-bold">Dirección</h4>
-                                    <p>Calle Rescate #123, Col. Amor Animal<br>Ciudad de México</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start mb-4">
-                                <i class="fas fa-phone-alt mt-1 mr-4"></i>
-                                <div>
-                                    <h4 class="font-bold">Teléfono</h4>
-                                    <p>51 123 456 789</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <i class="fas fa-envelope mt-1 mr-4"></i>
-                                <div>
-                                    <h4 class="font-bold">Email</h4>
-                                    <p>contacto@patitas.com</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex space-x-4">
-                            <a href="https://www.facebook.com/profile.php?id=100064803426751" class="text-white hover:text-amber-200 transition-all">
-                                <i class="fab fa-facebook-f text-xl"></i>
-                            </a>
-                            <a href="https://www.instagram.com/abrigandoaloscanetanitos/" class="text-white hover:text-amber-200 transition-all">
-                                <i class="fab fa-instagram text-xl"></i>
-                            </a>
-                            <a href="https://wa.me/51123456789?text=Hola%20quiero%20más%20información" class="text-white hover:text-amber-200 transition-all">
-                                <i class="fab fa-whatsapp text-xl"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="md:w-1/2 p-8">
-                        <form id="contactForm" class="space-y-4">
-                            <div>
-                                <label for="name" class="block text-gray-700 font-medium mb-2">Nombre</label>
-                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
-                            </div>
-                            <div>
-                                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
-                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
-                            </div>
-                            <div>
-                                <label for="subject" class="block text-gray-700 font-medium mb-2">Asunto</label>
-                                <select id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
-                                    <option value="">Selecciona una opción</option>
-                                    <option value="adoption">Quiero adoptar</option>
-                                    <option value="foster">Quiero ser hogar temporal</option>
-                                    <option value="donation">Quiero donar</option>
-                                    <option value="volunteer">Quiero ser voluntario</option>
-                                    <option value="other">Otro</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="message" class="block text-gray-700 font-medium mb-2">Mensaje</label>
-                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
-                            </div>
-                            <button type="submit" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-4 rounded-lg transition-all">
-                                Enviar Mensaje
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-6 text-center">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Abrigando A Los Cañetañitos</h3>
-                    <p class="text-gray-400">Rescatando y transformando vidas desde 2015.</p>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Enlaces Rápidos</h4>
-                    <ul class="space-y-2">
-                    <li><a href="#inicio" class="text-gray-400 hover:text-white transition-all">Inicio</a></li>
-                    <li><a href="#nosotros" class="text-gray-400 hover:text-white transition-all">Nosotros</a></li>
-                    <li><a href="#adopta" class="text-gray-400 hover:text-white transition-all">Adopta</a></li>
-                    <li><a href="#ayuda" class="text-gray-400 hover:text-white transition-all">Cómo Ayudar</a></li>
-                    <li><a href="#contacto" class="text-gray-400 hover:text-white transition-all">Contacto</a></li>
+    <section id="contacto" class="section bg-dark">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Contáctanos</h2>
+                    <p>Estamos listos para responder tus dudas.</p>
+                    <ul class="info-list">
+                        <li><i class="fas fa-map-marker-alt"></i> Calle Rescate #123, Lima</li>
+                        <li><i class="fas fa-phone-alt"></i> +51 123 456 789</li>
+                        <li><i class="fas fa-envelope"></i> contacto@abrigando.org</li>
                     </ul>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
                 </div>
-                <div>
-                    <h4 class="font-bold mb-4">Horario</h4>
-                    <p class="text-gray-400">Refugio: Martes a Domingo<br>10:00 am - 6:00 pm</p>
-                    <p class="text-gray-400 mt-2">Oficinas: Lunes a Viernes<br>9:00 am - 5:00 pm</p>
-                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Tu Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Tu Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="4" placeholder="Tu Mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Enviar Mensaje</button>
+                </form>
             </div>
-                <div class="border-t border-gray-700 mt-8 pt-8 text-gray-400 text-center">
-                <p>© 2025 Abrigando A Los Cañetañitos. Todos los derechos reservados.</p>
-            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Abrigando A Los Cañetañitos. Hecho con <i class="fas fa-heart"></i> por voluntarios.</p>
         </div>
     </footer>
 
     <script>
-        // Simple form validation
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-            
-            if (!name || !email || !subject || !message) {
-                alert('Por favor completa todos los campos del formulario.');
-                return;
-            }
-            
-            // Here you would typically send the form data to a server
-            alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
-            this.reset();
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+        document.querySelector('.mobile-menu-btn').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
         });
     </script>
 </body>
 </html>
-

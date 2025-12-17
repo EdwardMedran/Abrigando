@@ -3,320 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abrigando A Los Cañetañitos</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://edwardmedran.github.io/Abrigando/css/style.css">
+    <title>Abrigando A Los Cañetañitos | Adopta</title>
+    <link rel="icon" href="../img/LogoAbrigando.jpg" type="image/jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="font-sans bg-gray-50">
-    <!-- Navbar -->
-    <nav class="bg-amber-600 text-white shadow-lg">
-        <div class="container mx-auto px-6 py-3">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center space-x-4">
-                    <img src="https://edwardmedran.github.io/Abrigando/img/LogoAbrigando.jpg" alt="Logo de Patitas Felices - huella de perro en círculo amarillo" class="h-12">
-                    <span class="font-bold text-xl">Abrigando A Los Cañetañitos</span>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="https://edwardmedran.github.io/Abrigando/index.html" class="hover:text-amber-200 transition-all">Inicio</a>
-                    <a href="https://edwardmedran.github.io/Abrigando/menús/eligeTuPeludo.html" class="hover:text-amber-200 transition-all">Adopta</a>
-                </div>
-                <button class="md:hidden focus:outline-none">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <img src="../img/LogoAbrigando.jpg" alt="Logo Abrigando">
+                <span>Abrigando A Los Cañetañitos</span>
+            </a>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            <div class="nav-links">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#nosotros">Nosotros</a>
+                <a href="eligeTuPeludo.html" class="active">Adopta</a>
+                <a href="../index.html#ayuda">Cómo Ayudar</a>
+                <a href="../index.html#contacto">Contacto</a>
             </div>
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <main class="py-12">
-        <div class="container mx-auto px-6">
-            <!-- Page Header -->
-            <div class="text-center mb-12">
-                <h1 class="text-4xl font-bold text-gray-800 mb-4">Nuestros Peludos en Busca de Hogar</h1>
-                <p class="text-gray-600 max-w-2xl mx-auto">Cada uno de estos angelitos espera una familia que los ame para siempre. Conócelos y descubre cuál podría ser tu mejor compañero.</p>
-            </div>
+    <header class="page-header bg-dark section">
+        <div class="container">
+            <h1 class="section-title" style="color: white;">Encuentra a tu compañero ideal</h1>
+            <p class="section-subtitle" style="color: var(--text-light);">Explora a nuestros rescataditos. Ellos están esperando por ti.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
             
-            <!-- Filters -->
-            <div class="bg-white p-6 rounded-lg shadow-md mb-8">
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-                    <div class="mb-4 md:mb-0">
-                        <h3 class="font-bold text-gray-700 mb-2">Filtrar por:</h3>
-                        <div class="flex flex-wrap gap-2">
-                            <button class="filter-btn px-4 py-2 bg-gray-100 hover:bg-amber-100 text-gray-700 rounded-full transition-all active" data-filter="all">
-                                Todos
-                            </button>
-                            <button class="filter-btn px-4 py-2 bg-gray-100 hover:bg-amber-100 text-gray-700 rounded-full transition-all" data-filter="male">
-                                Machos
-                            </button>
-                            <button class="filter-btn px-4 py-2 bg-gray-100 hover:bg-amber-100 text-gray-700 rounded-full transition-all" data-filter="female">
-                                Hembras
-                            </button>
-                            <button class="filter-btn px-4 py-2 bg-gray-100 hover:bg-amber-100 text-gray-700 rounded-full transition-all" data-filter="puppy">
-                                Cachorros
-                            </button>
-                            <button class="filter-btn px-4 py-2 bg-gray-100 hover:bg-amber-100 text-gray-700 rounded-full transition-all" data-filter="adult">
-                                Adultos
-                            </button>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-gray-700 mb-2">Ordenar por:</h3>
-                        <select class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
-                            <option>Recién llegados</option>
-                            <option>Mayor tiempo en espera</option>
-                            <option>Nombre A-Z</option>
-                            <option>Edad (menor a mayor)</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Dogs Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                <!-- Dog Card 1 -->
-                <div class="dog-card bg-white rounded-lg overflow-hidden shadow-md transition-all" data-gender="male" data-age="adult">
-                    <div class="relative">
-                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/90414d37-baa5-4c3e-8fe4-6fb4f31e5144.png" alt="Perrito labrador dorado joven sonriendo con lengua afuera en un parque" class="w-full h-64 object-cover">
-                        <span class="absolute top-3 right-3 bg-amber-600 text-white text-xs font-bold px-2 py-1 rounded-full">NUEVO</span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Max</h3>
-                        <div class="flex items-center mb-4">
-                            <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded">Macho</span>
-                            <span class="ml-2 text-gray-600">2 años</span>
-                            <span class="ml-2 text-gray-600">Mediano</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Max es un labrador lleno de energía que adora jugar y correr. Se lleva bien con niños y otros perros.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="font-bold text-amber-600">Disponible</span>
-                            <a href="perfil-max.html" class="bg-amber-600 hover:bg-amber-700 text-white py-2 px-4 rounded-full transition-all text-sm">
-                                Conocer más
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Dog Card 2 -->
-                <div class="dog-card bg-white rounded-lg overflow-hidden shadow-md transition-all" data-gender="female" data-age="adult">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/661e0bc7-8a97-49bd-b76e-97c76c90cfc0.png" alt="Perrita mestiza pequeña de color negro con blanco mirando con curiosidad a la cámara" class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Luna</h3>
-                        <div class="flex items-center mb-4">
-                            <span class="bg-pink-100 text-pink-800 text-xs font-semibold px-2.5 py-0.5 rounded">Hembra</span>
-                            <span class="ml-2 text-gray-600">3 años</span>
-                            <span class="ml-2 text-gray-600">Pequeña</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Luna es tranquila y cariñosa. Perfecta para personas que buscan compañía tranquila y amorosa.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="font-bold text-amber-600">Disponible</span>
-                            <a href="perfil-luna.html" class="bg-amber-600 hover:bg-amber-700 text-white py-2 px-4 rounded-full transition-all text-sm">
-                                Conocer más
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Dog Card 3 -->
-                <div class="dog-card bg-white rounded-lg overflow-hidden shadow-md transition-all" data-gender="male" data-age="adult">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8a84e1dc-e5cb-42dd-b96d-ec889ce66cfc.png" alt="Perrito beagle adulto con expresión juguetona sentado en el pasto" class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Toby</h3>
-                        <div class="flex items-center mb-4">
-                            <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded">Macho</span>
-                            <span class="ml-2 text-gray-600">5 años</span>
-                            <span class="ml-2 text-gray-600">Mediano</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Toby es un beagle con mucha personalidad. Le encanta seguir olores y dar largos paseos.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="font-bold text-amber-600">Disponible</span>
-                            <a href="perfil-toby.html" class="bg-amber-600 hover:bg-amber-700 text-white py-2 px-4 rounded-full transition-all text-sm">
-                                Conocer más
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Dog Card 4 -->
-                <div class="dog-card bg-white rounded-lg overflow-hidden shadow-md transition-all" data-gender="female" data-age="puppy">
-                    <div class="relative">
-                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7b1c76aa-41f4-4a2e-8ad7-403dc5917c9e.png" alt="Cachorrita mestiza de color café claro con blanco jugando con una pelota" class="w-full h-64 object-cover">
-                        <span class="absolute top-3 right-3 bg-amber-600 text-white text-xs font-bold px-2 py-1 rounded-full">URGENTE</span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Daisy</h3>
-                        <div class="flex items-center mb-4">
-                            <span class="bg-pink-100 text-pink-800 text-xs font-semibold px-2.5 py-0.5 rounded">Hembra</span>
-                            <span class="ml-2 text-gray-600">4 meses</span>
-                            <span class="ml-2 text-gray-600">Pequeña</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Daisy es una cachorrita juguetona que adora morder juguetes y recibir cariño. Necesita una familia paciente.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="font-bold text-amber-600">Disponible</span>
-                            <a href="perfil-daisy.html" class="bg-amber-600 hover:bg-amber-700 text-white py-2 px-4 rounded-full transition-all text-sm">
-                                Conocer más
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Dog Card 5 -->
-                <div class="dog-card bg-white rounded-lg overflow-hidden shadow-md transition-all" data-gender="male" data-age="adult">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b8d2c958-9db7-4989-ba1e-4d61c4f81370.png" alt="Perro pastor alemán adulto de color negro y café mirando fijamente a la cámara" class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Thor</h3>
-                        <div class="flex items-center mb-4">
-                            <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded">Macho</span>
-                            <span class="ml-2 text-gray-600">6 años</span>
-                            <span class="ml-2 text-gray-600">Grande</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Thor es un perro leal y protector. Fue abandonado pero mantiene un gran corazón. Ideal para hogares con experiencia.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="font-bold text-amber-600">Disponible</span>
-                            <a href="perfil-thor.html" class="bg-amber-600 hover:bg-amber-700 text-white py-2 px-4 rounded-full transition-all text-sm">
-                                Conocer más
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Dog Card 6 -->
-                <div class="dog-card bg-white rounded-lg overflow-hidden shadow-md transition-all" data-gender="female" data-age="puppy">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7e8bb24b-9c22-4d4d-ab63-0153f1399bde.png" alt="Cachorrita de raza chihuahua color crema durmiendo en una manta suave" class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Chiquis</h3>
-                        <div class="flex items-center mb-4">
-                            <span class="bg-pink-100 text-pink-800 text-xs font-semibold px-2.5 py-0.5 rounded">Hembra</span>
-                            <span class="ml-2 text-gray-600">3 meses</span>
-                            <span class="ml-2 text-gray-600">Mini</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Chiquis es una cachorrita pequeñita pero con mucha personalidad. Le encanta dormir en regazos y jugar con peluches.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="font-bold text-amber-600">Disponible</span>
-                            <a href="perfil-chiquis.html" class="bg-amber-600 hover:bg-amber-700 text-white py-2 px-4 rounded-full transition-all text-sm">
-                                Conocer más
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Dog Card 7 -->
-                <div class="dog-card bg-white rounded-lg overflow-hidden shadow-md transition-all" data-gender="male" data-age="adult">
-                    <div class="relative">
-                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/508e1c6a-2afa-4dc9-b269-c75612c6f240.png" alt="Perrito mestizo de talla mediana color blanco con manchas café descansando en el pasto" class="w-full h-64 object-cover">
-                        <span class="absolute top-3 right-3 bg-amber-600 text-white text-xs font-bold px-2 py-1 rounded-full">ESPECIAL</span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Simón</h3>
-                        <div class="flex items-center mb-4">
-                            <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded">Macho</span>
-                            <span class="ml-2 text-gray-600">4 años</span>
-                            <span class="ml-2 text-gray-600">Mediano</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Simón es especial, perdió una pata en un accidente pero eso no le quita energía. Es súper cariñoso y se adapta fácil.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="font-bold text-amber-600">Disponible</span>
-                            <a href="perfil-simon.html" class="bg-amber-600 hover:bg-amber-700 text-white py-2 px-4 rounded-full transition-all text-sm">
-                                Conocer más
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Dog Card 8 -->
-                <div class="dog-card bg-white rounded-lg overflow-hidden shadow-md transition-all" data-gender="female" data-age="adult">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d20c6a9a-865c-4583-87d2-f14c1b2f846b.png" alt="Perrita de raza poodle blanca y esponjosa posando elegante en un jardín" class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Bella</h3>
-                        <div class="flex items-center mb-4">
-                            <span class="bg-pink-100 text-pink-800 text-xs font-semibold px-2.5 py-0.5 rounded">Hembra</span>
-                            <span class="ml-2 text-gray-600">5 años</span>
-                            <span class="ml-2 text-gray-600">Pequeña</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Bella es una señorita elegante que adora los mimos y pasear en brazos. Ideal para personas mayores o familias tranquilas.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="font-bold text-amber-600">Disponible</span>
-                            <a href="perfil-bella.html" class="bg-amber-600 hover:bg-amber-700 text-white py-2 px-4 rounded-full transition-all text-sm">
-                                Conocer más
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Pagination -->
-            <div class="flex justify-center mt-12">
-                <nav class="inline-flex rounded-md shadow">
-                    <a href="#" class="px-3 py-2 rounded-l-md border border-gray-300 bg-amber-600 text-white font-medium">
-                        1
-                    </a>
-                    <a href="#" class="px-3 py-2 border-t border-b border-gray-300 bg-white text-gray-700 hover:bg-gray-50 font-medium">
-                        2
-                    </a>
-                    <a href="#" class="px-3 py-2 border-t border-b border-gray-300 bg-white text-gray-700 hover:bg-gray-50 font-medium">
-                        3
-                    </a>
-                    <a href="#" class="px-3 py-2 rounded-r-md border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 font-medium">
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                </nav>
-            </div>
-            
-            <!-- Adoption Info -->
-            <div class="bg-amber-50 p-8 rounded-lg mt-12">
-                <h3 class="text-2xl font-bold text-center text-gray-800 mb-6">Proceso de Adopción</h3>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="text-center">
-                        <div class="bg-white w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4 shadow-md">
-                            <i class="fas fa-search text-amber-600 text-xl"></i>
-                        </div>
-                        <h4 class="font-bold text-gray-800 mb-2">1. Conoce a nuestros perritos</h4>
-                        <p class="text-gray-600">Visítalos en el refugio o agenda una videollamada para conocerlos mejor.</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="bg-white w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4 shadow-md">
-                            <i class="fas fa-file-alt text-amber-600 text-xl"></i>
-                        </div>
-                        <h4 class="font-bold text-gray-800 mb-2">2. Llena tu solicitud</h4>
-                        <p class="text-gray-600">Completa nuestro formulario de adopción y cuéntanos sobre el hogar que ofreces.</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="bg-white w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4 shadow-md">
-                            <i class="fas fa-home text-amber-600 text-xl"></i>
-                        </div>
-                        <h4 class="font-bold text-gray-800 mb-2">3. Lleva a tu nuevo amigo</h4>
-                        <p class="text-gray-600">Si todo está bien, ¡firmaremos los papeles y podrás llevarte a tu nuevo compañero!</p>
-                    </div>
-                </div>
+            <div class="filters-container">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="macho">Machos</button>
+                <button class="filter-btn" data-filter="hembra">Hembras</button>
+                <button class="filter-btn" data-filter="cachorro">Cachorros</button>
             </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12 mt-12">
-        <div class="container mx-auto px-6 text-center">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Abrigando A Los Cañetañitos</h3>
-                    <p class="text-gray-400">Rescatando y transformando vidas desde 2015.</p>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Enlaces Rápidos</h4>
-                    <ul class="space-y-2">
-                        <li><a href="https://edwardmedran.github.io/Abrigando/index.html" class="text-gray-400 hover:text-white transition-all">Inicio</a></li>
-                        <li><a href="https://edwardmedran.github.io/Abrigando/menús/apadrina.html" class="text-gray-400 hover:text-white transition-all">Apadrina</a></li>
-                        <li><a href="https://edwardmedran.github.io/Abrigando/menús/donación.html" class="text-gray-400 hover:text-white transition-all">Donación</a></li>
-                        <li><a href="https://edwardmedran.github.io/Abrigando/menús/eligeTuPeludo.html" class="text-gray-400 hover:text-white transition-all">Elige tu Peludo</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Horario</h4>
-                    <p class="text-gray-400">Refugio: Martes a Domingo<br>10:00 am - 6:00 pm</p>
-                    <p class="text-gray-400 mt-2">Oficinas: Lunes a Viernes<br>9:00 am - 5:00 pm</p>
-                </div>
+            <div class="dogs-grid" id="dogs-container">
+                
+                <article class="dog-card filterable" data-category="macho">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?q=80&w=600&auto=format&fit=crop" alt="Max">
+                        <span class="tag tag-male">Macho</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Max</h3>
+                        <p class="age">2 años • Labrador Mix</p>
+                        <a href="../peludos/peludo1.html" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="dog-card filterable" data-category="hembra">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1583511655826-05700d52f4d9?q=80&w=600&auto=format&fit=crop" alt="Luna">
+                        <span class="tag tag-female">Hembra</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Luna</h3>
+                        <p class="age">3 años • Mestiza</p>
+                        <a href="../peludos/peludo2.html" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="dog-card filterable" data-category="macho">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?q=80&w=600&auto=format&fit=crop" alt="Toby">
+                        <span class="tag tag-male">Macho</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Toby</h3>
+                        <p class="age">5 años • Beagle</p>
+                        <a href="../peludos/peludo3.html" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="dog-card filterable" data-category="cachorro">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1591160690555-5debfba289f0?q=80&w=600&auto=format&fit=crop" alt="Coco">
+                        <span class="tag tag-male">Cachorro</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Coco</h3>
+                        <p class="age">4 meses • Golden R.</p>
+                        <a href="#" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="dog-card filterable" data-category="hembra">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1615569691310-3029820895d9?q=80&w=600&auto=format&fit=crop" alt="Kira">
+                        <span class="tag tag-female">Hembra</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Kira</h3>
+                        <p class="age">1 año • Husky</p>
+                        <a href="#" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                 <article class="dog-card filterable" data-category="macho">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1563999072136-25e19bb14162?q=80&w=600&auto=format&fit=crop" alt="Rocky">
+                        <span class="tag tag-male">Macho</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Rocky</h3>
+                        <p class="age">4 años • Pastor Alemán</p>
+                        <a href="#" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                <p>© 2025 Abrigando A Los Cañetañitos. Todos los derechos reservados.</p>
-            </div>
+
+            <p id="no-results-message" style="display: none; text-align: center; margin-top: 2rem; font-size: 1.2rem;">No encontramos peluditos con esas características en esta página.</p>
+
+            <div class="pagination-container" id="pagination-controls">
+                </div>
+
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Abrigando A Los Cañetañitos. Hecho con <i class="fas fa-heart"></i> por voluntarios.</p>
         </div>
     </footer>
+
+    <script>
+        const itemsPerPage = 4; 
+        let currentPage = 1;
+        let currentFilter = 'all';
+
+        const allDogs = Array.from(document.querySelectorAll('.filterable'));
+        const dogsContainer = document.getElementById('dogs-container');
+        const paginationContainer = document.getElementById('pagination-controls');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const noResultsMessage = document.getElementById('no-results-message');
+
+        function updateDisplay() {
+            const filteredDogs = allDogs.filter(dog => {
+                if (currentFilter === 'all') return true;
+                return dog.getAttribute('data-category') === currentFilter;
+            });
+
+            const totalPages = Math.ceil(filteredDogs.length / itemsPerPage);
+            
+            if (currentPage > totalPages) currentPage = totalPages || 1;
+            if (currentPage < 1) currentPage = 1;
+
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const dogsToShow = filteredDogs.slice(startIndex, endIndex);
+
+            allDogs.forEach(dog => dog.style.display = 'none');
+
+            if (dogsToShow.length > 0) {
+                dogsToShow.forEach(dog => dog.style.display = 'block');
+                noResultsMessage.style.display = 'none';
+                dogsContainer.style.display = 'grid'; 
+            } else {
+                noResultsMessage.style.display = 'block';
+                dogsContainer.style.display = 'none';
+            }
+            
+            renderPagination(totalPages);
+        }
+
+        function renderPagination(totalPages) {
+            paginationContainer.innerHTML = ''; 
+
+            if (totalPages <= 1) return;
+
+            const prevBtn = createPaginationBtn('<i class="fas fa-chevron-left"></i>', () => {
+                if (currentPage > 1) { currentPage--; updateDisplay(); }
+            });
+            if (currentPage === 1) prevBtn.classList.add('disabled');
+            paginationContainer.appendChild(prevBtn);
+
+            for (let i = 1; i <= totalPages; i++) {
+                const pageBtn = createPaginationBtn(i, () => {
+                    currentPage = i;
+                    updateDisplay();
+                });
+                if (i === currentPage) pageBtn.classList.add('active');
+                paginationContainer.appendChild(pageBtn);
+            }
+
+            const nextBtn = createPaginationBtn('<i class="fas fa-chevron-right"></i>', () => {
+                if (currentPage < totalPages) { currentPage++; updateDisplay(); }
+            });
+            if (currentPage === totalPages || totalPages === 0) nextBtn.classList.add('disabled');
+            paginationContainer.appendChild(nextBtn);
+        }
+
+        function createPaginationBtn(text, onClick) {
+            const btn = document.createElement('button');
+            btn.innerHTML = text;
+            btn.className = 'page-btn';
+            btn.addEventListener('click', onClick);
+            return btn;
+        }
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentFilter = btn.getAttribute('data-filter');
+                currentPage = 1;
+                updateDisplay();
+            });
+        });
+
+        document.querySelector('.mobile-menu-btn').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        updateDisplay();
+    </script>
 </body>
 </html>

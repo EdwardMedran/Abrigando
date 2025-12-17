@@ -3,346 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apoya Nuestra Misión | Patitas Felices</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://edwardmedran.github.io/Abrigando/css/style.css">
+    <title>Abrigando A Los Cañetañitos | Donaciones</title>
+    <link rel="icon" href="../img/LogoAbrigando.jpg" type="image/jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="font-sans bg-gray-50">
-    <!-- Navbar -->
-    <nav class="bg-amber-600 text-white shadow-lg">
-        <div class="container mx-auto px-6 py-3">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center space-x-4">
-                    <img src="https://edwardmedran.github.io/Abrigando/img/LogoAbrigando.jpg" alt="Logo de Patitas Felices - huella de perro en círculo amarillo" class="h-12">
-                    <span class="font-bold text-xl">Abrigando A Los Cañetañitos</span>
-                </div>
-                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="https://edwardmedran.github.io/Abrigando/index.html" class="hover:text-amber-200 transition-all">Inicio</a>
-                    <a href="https://edwardmedran.github.io/Abrigando/menús/eligeTuPeludo.html" class="hover:text-amber-200 transition-all">Adopta</a>
-                </div>
-                <button class="md:hidden focus:outline-none">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <img src="../img/LogoAbrigando.jpg" alt="Logo Abrigando">
+                <span>Abrigando A Los Cañetañitos</span>
+            </a>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            <div class="nav-links">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#nosotros">Nosotros</a>
+                <a href="eligeTuPeludo.html">Adopta</a>
+                <a href="../index.html#ayuda" class="active">Cómo Ayudar</a>
+                <a href="../index.html#contacto">Contacto</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero h-screen flex items-center justify-center text-center text-white">
-        <div class="container mx-auto px-6 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-6">Tu Apoyo Salva Vidas</h1>
-            <p class="text-xl mb-8 max-w-3xl mx-auto">Cada contribución nos ayuda a rescatar, rehabilitar y encontrar hogares para perritos en situación de calle.</p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#formas" class="bg-white hover:bg-gray-100 text-amber-600 font-bold py-3 px-6 rounded-full transition-all">Formas de Donar</a>
-                <a href="#impacto" class="bg-amber-700 hover:bg-amber-800 text-white font-bold py-3 px-6 rounded-full transition-all">Nuestro Impacto</a>
+    <header class="page-header bg-dark section" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1593134257782-e89567b7718a?q=80&w=1000&auto=format&fit=crop'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h1 class="section-title" style="color: white;">Tu aporte llena pancitas</h1>
+            <p class="section-subtitle" style="color: var(--text-light);">No necesitamos grandes cantidades, necesitamos grandes corazones. Cada sol cuenta.</p>
+            <div class="hero-buttons">
+                <a href="#cuentas" class="btn btn-primary">Ver Cuentas Bancarias <i class="fas fa-arrow-down"></i></a>
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- Ways to Donate -->
-    <section id="formas" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Formas de Contribuir</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Donation Option 1 -->
-                <div class="donation-option bg-gray-50 p-8 rounded-lg transition-all">
-                    <div class="bg-amber-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-money-bill-wave text-amber-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-center text-gray-800 mb-4">Donación Única</h3>
-                    <p class="text-gray-600 mb-6 text-center">Apoya con una contribución puntual que nos ayudará inmediatamente con gastos urgentes.</p>
-                    
-                    <div class="grid grid-cols-3 gap-2 mb-6">
-                        <button class="bg-amber-600 hover:bg-amber-700 text-white py-2 rounded transition-all">$100</button>
-                        <button class="bg-amber-600 hover:bg-amber-700 text-white py-2 rounded transition-all">$300</button>
-                        <button class="bg-amber-600 hover:bg-amber-700 text-white py-2 rounded transition-all">$500</button>
-                        <button class="bg-white border border-amber-600 text-amber-600 hover:bg-amber-50 py-2 rounded transition-all">$1,000</button>
-                        <button class="bg-white border border-amber-600 text-amber-600 hover:bg-amber-50 py-2 rounded transition-all">$2,000</button>
-                        <button class="bg-white border border-amber-600 text-amber-600 hover:bg-amber-50 py-2 rounded transition-all">Otro</button>
-                    </div>
-                    
-                    <button class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-4 rounded-lg transition-all">
-                        Donar Ahora
-                    </button>
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">El poder de tu donación</h2>
+            <div class="steps-grid"> <div class="step-card impact-card">
+                    <div class="step-icon"><i class="fas fa-bone"></i></div>
+                    <h3>S/ 20</h3>
+                    <p>Alimenta a un perrito rescatado durante <strong>3 días</strong>.</p>
                 </div>
-                
-                <!-- Donation Option 2 -->
-                <div class="donation-option bg-gray-50 p-8 rounded-lg transition-all">
-                    <div class="bg-amber-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-calendar-check text-amber-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-center text-gray-800 mb-4">Donación Mensual</h3>
-                    <p class="text-gray-600 mb-6 text-center">Conviértete en héroe recurrente y ayuda a garantizar nuestro funcionamiento continuo.</p>
-                    
-                    <div class="mb-6">
-                        <div class="flex items-center mb-2">
-                            <input type="radio" id="monthly-100" name="monthly" class="mr-2" checked>
-                            <label for="monthly-100" class="text-gray-700">$100/mes - Alimenta a un perrito por 2 semanas</label>
-                        </div>
-                        <div class="flex items-center mb-2">
-                            <input type="radio" id="monthly-300" name="monthly" class="mr-2">
-                            <label for="monthly-300" class="text-gray-700">$300/mes - Cubre vacunas para 3 perritos</label>
-                        </div>
-                        <div class="flex items-center">
-                            <input type="radio" id="monthly-500" name="monthly" class="mr-2">
-                            <label for="monthly-500" class="text-gray-700">$500/mes - Apoya la esterilización de 2 perritos</label>
-                        </div>
-                    </div>
-                    
-                    <button class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-4 rounded-lg transition-all">
-                        Suscribirme
-                    </button>
+                <div class="step-card impact-card">
+                    <div class="step-icon"><i class="fas fa-syringe"></i></div>
+                    <h3>S/ 50</h3>
+                    <p>Cubre una <strong>vacuna quíntuple</strong> esencial para un cachorro.</p>
                 </div>
-                
-                <!-- Donation Option 3 -->
-                <div class="donation-option bg-gray-50 p-8 rounded-lg transition-all">
-                    <div class="bg-amber-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-gift text-amber-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-center text-gray-800 mb-4">Donación en Especie</h3>
-                    <p class="text-gray-600 mb-6 text-center">También aceptamos donaciones de alimentos, medicamentos, cobijas y otros insumos.</p>
-                    
-                    <div class="mb-6">
-                        <h4 class="font-semibold text-gray-700 mb-2">Necesitamos:</h4>
-                        <ul class="text-gray-600 space-y-1">
-                            <li class="flex items-start">
-                                <i class="fas fa-paw text-amber-600 mt-1 mr-2 text-xs"></i>
-                                <span>Alimento para perro adulto y cachorro</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-paw text-amber-600 mt-1 mr-2 text-xs"></i>
-                                <span>Cobijas, toallas y camas</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-paw text-amber-600 mt-1 mr-2 text-xs"></i>
-                                <span>Juguetes y correas</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-paw text-amber-600 mt-1 mr-2 text-xs"></i>
-                                <span>Medicamentos y productos de limpieza</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <button class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-4 rounded-lg transition-all">
-                        Coordinar Entrega
-                    </button>
+                <div class="step-card impact-card">
+                    <div class="step-icon"><i class="fas fa-first-aid"></i></div>
+                    <h3>S/ 100</h3>
+                    <p>Ayuda con exámenes de sangre y <strong>medicinas de emergencia</strong>.</p>
+                </div>
+                <div class="step-card impact-card">
+                    <div class="step-icon"><i class="fas fa-home"></i></div>
+                    <h3>S/ 200</h3>
+                    <p>Contribuye al pago del <strong>alquiler y servicios</strong> del refugio.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Impact Section -->
-    <section id="impacto" class="py-20 bg-amber-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">El Impacto de Tu Donación</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Impact Card 1 -->
-                <div class="impact-card bg-white p-6 rounded-lg shadow-sm text-center transition-all">
-                    <div class="impact-icon bg-amber-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4 transition-all">
-                        <i class="fas fa-utensils text-amber-600 text-3xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">$100</h3>
-                    <p class="text-gray-600">Alimenta a un perrito rescatado por 2 semanas</p>
-                </div>
+    <section id="cuentas" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Canales de Ayuda</h2>
+            <p class="section-subtitle">Transferencias directas, seguras y sin comisiones.</p>
+
+            <div class="bank-grid">
                 
-                <!-- Impact Card 2 -->
-                <div class="impact-card bg-white p-6 rounded-lg shadow-sm text-center transition-all">
-                    <div class="impact-icon bg-amber-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4 transition-all">
-                        <i class="fas fa-syringe text-amber-600 text-3xl"></i>
+                <div class="bank-card featured">
+                    <div class="bank-header">
+                        <h3>Billeteras Digitales</h3>
+                        <div class="bank-logos">
+                            <span class="badge yape">Yape</span>
+                            <span class="badge plin">Plin</span>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">$300</h3>
-                    <p class="text-gray-600">Cubre el costo de vacunas para 3 perritos</p>
-                </div>
-                
-                <!-- Impact Card 3 -->
-                <div class="impact-card bg-white p-6 rounded-lg shadow-sm text-center transition-all">
-                    <div class="impact-icon bg-amber-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4 transition-all">
-                        <i class="fas fa-user-md text-amber-600 text-3xl"></i>
+                    <div class="qr-placeholder">
+                        <i class="fas fa-qrcode"></i>
+                        <p>Aquí iría tu imagen QR real</p>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">$500</h3>
-                    <p class="text-gray-600">Permite esterilizar a 2 perritos</p>
-                </div>
-                
-                <!-- Impact Card 4 -->
-                <div class="impact-card bg-white p-6 rounded-lg shadow-sm text-center transition-all">
-                    <div class="impact-icon bg-amber-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4 transition-all">
-                        <i class="fas fa-home text-amber-600 text-3xl"></i>
+                    <div class="account-number">
+                        <p>A nombre de: <strong>---</strong></p>
+                        <div class="copy-box">
+                            <span id="yape-num">999 123 456</span>
+                            <button class="copy-btn" onclick="copyToClipboard('999 123 456')"><i class="far fa-copy"></i></button>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">$1,000</h3>
-                    <p class="text-gray-600">Ayuda con el alquiler mensual del refugio</p>
                 </div>
+
+                <div class="bank-card">
+                    <div class="bank-header">
+                        <h3>BCP</h3>
+                        <i class="fas fa-university bank-icon"></i>
+                    </div>
+                    <div class="account-details">
+                        <p class="acc-label">Cuenta Ahorros Soles:</p>
+                        <div class="copy-box small">
+                            <span id="bcp-num">191-12345678-0-01</span>
+                            <button class="copy-btn" onclick="copyToClipboard('191-12345678-0-01')"><i class="far fa-copy"></i></button>
+                        </div>
+                        
+                        <p class="acc-label">CCI (Interbancario):</p>
+                        <div class="copy-box small">
+                            <span id="bcp-cci">002-191-12345678001-59</span>
+                            <button class="copy-btn" onclick="copyToClipboard('002-191-12345678001-59')"><i class="far fa-copy"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bank-card">
+                    <div class="bank-header">
+                        <h3>Interbank</h3>
+                        <i class="fas fa-university bank-icon"></i>
+                    </div>
+                    <div class="account-details">
+                        <p class="acc-label">Cuenta Ahorros Soles:</p>
+                        <div class="copy-box small">
+                            <span id="ibk-num">898-3123456789</span>
+                            <button class="copy-btn" onclick="copyToClipboard('898-3123456789')"><i class="far fa-copy"></i></button>
+                        </div>
+                        
+                        <p class="acc-label">CCI (Interbancario):</p>
+                        <div class="copy-box small">
+                            <span id="ibk-cci">003-898-013123456789-45</span>
+                            <button class="copy-btn" onclick="copyToClipboard('003-898-013123456789-45')"><i class="far fa-copy"></i></button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             
-            <!-- Financial Transparency -->
-            <div class="bg-white p-8 rounded-lg shadow-sm mt-12">
-                <h3 class="text-2xl font-bold text-center text-gray-800 mb-6">Transparencia Financiera</h3>
-                <p class="text-gray-600 mb-8 text-center max-w-3xl mx-auto">
-                    En Patitas Felices nos comprometemos con la transparencia. El 87% de tus donaciones se destinan directamente al cuidado de los animales, mientras que el 13% restante cubre gastos administrativos esenciales.
-                </p>
-                
-                <div class="flex flex-col md:flex-row items-center">
-                    <div class="md:w-1/2 mb-8 md:mb-0">
-                        <h4 class="font-bold text-gray-700 mb-4">Distribución de Fondos (2023)</h4>
-                        <div class="space-y-4">
-                            <div>
-                                <div class="flex justify-between mb-1">
-                                    <span class="text-gray-700">Alimentación</span>
-                                    <span class="text-gray-700">45%</span>
-                                </div>
-                                <div class="w-full bg-gray-200 rounded-full h-2.5">
-                                    <div class="bg-amber-600 h-2.5 rounded-full" style="width: 45%"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex justify-between mb-1">
-                                    <span class="text-gray-700">Atención Veterinaria</span>
-                                    <span class="text-gray-700">30%</span>
-                                </div>
-                                <div class="w-full bg-gray-200 rounded-full h-2.5">
-                                    <div class="bg-amber-500 h-2.5 rounded-full" style="width: 30%"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex justify-between mb-1">
-                                    <span class="text-gray-700">Refugio</span>
-                                    <span class="text-gray-700">12%</span>
-                                </div>
-                                <div class="w-full bg-gray-200 rounded-full h-2.5">
-                                    <div class="bg-amber-400 h-2.5 rounded-full" style="width: 12%"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex justify-between mb-1">
-                                    <span class="text-gray-700">Administración</span>
-                                    <span class="text-gray-700">13%</span>
-                                </div>
-                                <div class="w-full bg-gray-200 rounded-full h-2.5">
-                                    <div class="bg-gray-400 h-2.5 rounded-full" style="width: 13%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="md:w-1/2 md:pl-10">
-                        <h4 class="font-bold text-gray-700 mb-4">Logros Recientes</h4>
-                        <ul class="space-y-4">
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-amber-600 mt-1 mr-3"></i>
-                                <span class="text-gray-600">1,200+ perritos rescatados desde 2015</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-amber-600 mt-1 mr-3"></i>
-                                <span class="text-gray-600">85% tasa de adopción exitosa</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-amber-600 mt-1 mr-3"></i>
-                                <span class="text-gray-600">500+ esterilizaciones realizadas en 2023</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-amber-600 mt-1 mr-3"></i>
-                                <span class="text-gray-600">15,000+ kg de alimento distribuido</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Testimonials -->
-            <div class="mt-12">
-                <h3 class="text-2xl font-bold text-center text-gray-800 mb-8">Donantes Felices</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="bg-white p-6 rounded-lg shadow-sm">
-                        <div class="flex items-center mb-4">
-                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/95885134-14e8-4968-af1d-5cd4ae052e7d.png" alt="Mujer madura sonriente con su perro adoptado en un parque" class="w-16 h-16 rounded-full object-cover">
-                            <div class="ml-4">
-                                <h4 class="font-bold text-gray-800">Ana Martínez</h4>
-                                <p class="text-gray-600">Donante mensual desde 2020</p>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 italic">
-                            "Saber que mi pequeña contribución mensual ayuda a alimentar y cuidar a estos angelitos me llena de alegría. Recibo actualizaciones periódicas y eso me hace sentir parte de esta gran familia."
-                        </p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-sm">
-                        <div class="flex items-center mb-4">
-                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c2c0714d-963c-491d-a7e8-93fdb5679514.png" alt="Joven empresario sonriente sosteniendo un cheque de donación" class="w-16 h-16 rounded-full object-cover">
-                            <div class="ml-4">
-                                <h4 class="font-bold text-gray-800">Carlos Rodríguez</h4>
-                                <p class="text-gray-600">Donante corporativo</p>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 italic">
-                            "Nuestra empresa eligió apoyar a Patitas Felices por su transparencia y resultados tangibles. Hemos adoptado el refugio como parte de nuestro programa de responsabilidad social y los resultados son increíbles."
-                        </p>
-                    </div>
-                </div>
+            <div class="confirmation-note">
+                <p><i class="fas fa-info-circle"></i> <strong>Importante:</strong> Por favor envía la captura de tu donación a nuestro WhatsApp para registrarla y agradecerte.</p>
+                <a href="https://wa.me/51999123456" target="_blank" class="btn btn-secondary"><i class="fab fa-whatsapp"></i> Enviar Comprobante</a>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="py-16 bg-amber-600 text-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-6">¿Listo para marcar la diferencia?</h2>
-            <p class="text-xl mb-8 max-w-2xl mx-auto">Tu apoyo, sin importar el tamaño, ayuda a transformar vidas peludas.</p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#formas" class="bg-white hover:bg-gray-100 text-amber-600 font-bold py-3 px-8 rounded-full transition-all">Donar Ahora</a>
-                <a href="https://edwardmedran.github.io/Abrigando/index.html#contacto" class="bg-amber-700 hover:bg-amber-800 text-white font-bold py-3 px-8 rounded-full transition-all">Contactarnos</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-6 text-center">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Abrigando A Los Cañetañitos</h3>
-                    <p class="text-gray-400">Rescatando y transformando vidas desde 2015.</p>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Enlaces Rápidos</h4>
-                    <ul class="space-y-2">
-                        <li><a href="https://edwardmedran.github.io/Abrigando/index.html" class="text-gray-400 hover:text-white transition-all">Inicio</a></li>
-                        <li><a href="https://edwardmedran.github.io/Abrigando/menús/apadrina.html" class="text-gray-400 hover:text-white transition-all">Apadrina</a></li>
-                        <li><a href="https://edwardmedran.github.io/Abrigando/menús/donación.html" class="text-gray-400 hover:text-white transition-all">Donación</a></li>
-                        <li><a href="https://edwardmedran.github.io/Abrigando/menús/eligeTuPeludo.html" class="text-gray-400 hover:text-white transition-all">Elige tu Peludo</a></li>
+    <section class="section">
+        <div class="container">
+            <div class="form-container-styled" style="text-align: center;">
+                <h2 class="section-title">¿Prefieres donar insumos?</h2>
+                <p class="section-subtitle">Siempre necesitamos cosas materiales para el día a día.</p>
+                
+                <div class="supplies-grid">
+                    <ul class="check-list">
+                        <li><i class="fas fa-check"></i> Comida (Dog Chow, Ricocan, etc.)</li>
+                        <li><i class="fas fa-check"></i> Camitas y Mantas usadas</li>
+                        <li><i class="fas fa-check"></i> Artículos de limpieza (Lejía, Detergente)</li>
+                    </ul>
+                    <ul class="check-list">
+                        <li><i class="fas fa-check"></i> Gasas, alcohol y algodón</li>
+                        <li><i class="fas fa-check"></i> Correas y collares</li>
+                        <li><i class="fas fa-check"></i> Juguetes resistentes</li>
                     </ul>
                 </div>
-                <div>
-                    <h4 class="font-bold mb-4">Horario</h4>
-                    <p class="text-gray-400">Refugio: Martes a Domingo<br>10:00 am - 6:00 pm</p>
-                    <p class="text-gray-400 mt-2">Oficinas: Lunes a Viernes<br>9:00 am - 5:00 pm</p>
+
+                <div class="center-btn">
+                    <a href="../index.html#contacto" class="btn btn-primary">Coordinar Entrega</a>
                 </div>
             </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                <p>© 2025 Abrigando A Los Cañetañitos. Todos los derechos reservados.</p>
-            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Abrigando A Los Cañetañitos. Hecho con <i class="fas fa-heart"></i> por voluntarios.</p>
         </div>
     </footer>
 
     <script>
-        // Simple form interaction
-        document.querySelectorAll('.donation-option button').forEach(button => {
-            button.addEventListener('click', function() {
-                const optionTitle = this.closest('.donation-option').querySelector('h3').textContent;
-                alert(`¡Gracias por elegir ${optionTitle}! Serás redirigido a nuestro procesador de pagos seguro.`);
-            });
+        // Menú móvil
+        document.querySelector('.mobile-menu-btn').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
         });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+
+        // Función para copiar al portapapeles (UX mejorada)
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert("¡Número copiado al portapapeles! (" + text + ")");
+            }).catch(err => {
+                console.error('Error al copiar: ', err);
             });
-        });
+        }
     </script>
 </body>
 </html>

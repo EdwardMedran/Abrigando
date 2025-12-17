@@ -3,366 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abrigando A Los Cañetañitos</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://edwardmedran.github.io/Abrigando/css/style.css">
+    <title>Abrigando A Los Cañetañitos | Apadrina</title>
+    <link rel="icon" href="../img/LogoAbrigando.jpg" type="image/jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="font-sans bg-gray-50">
-    <!-- Navbar -->
-    <nav class="bg-amber-600 text-white shadow-lg">
-        <div class="container mx-auto px-6 py-3">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center space-x-4">
-                    <img src="https://edwardmedran.github.io/Abrigando/img/LogoAbrigando.jpg" alt="Logo de Abrigando" class="h-12">
-                    <span class="font-bold text-xl">Abrigando A Los Cañetañitos</span>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="https://edwardmedran.github.io/Abrigando/index.html" class="hover:text-amber-200 transition-all">Inicio</a>
-                    <a href="https://edwardmedran.github.io/Abrigando/menús/eligeTuPeludo.html" class="hover:text-amber-200 transition-all">Adopta</a>
-                </div>
-                <button class="md:hidden focus:outline-none">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <img src="../img/LogoAbrigando.jpg" alt="Logo Abrigando">
+                <span>Abrigando A Los Cañetañitos</span>
+            </a>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            <div class="nav-links">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#nosotros">Nosotros</a>
+                <a href="eligeTuPeludo.html">Adopta</a>
+                <a href="../index.html#ayuda" class="active">Cómo Ayudar</a>
+                <a href="../index.html#contacto">Contacto</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="bg-gradient-to-r from-amber-500 to-amber-600 text-white py-20 text-center">
-        <div class="container mx-auto px-6">
-            <h1 class="text-4xl md:text-5xl font-bold mb-6">Apadrina un Perrito Rescatado</h1>
-            <p class="text-xl mb-8 max-w-2xl mx-auto">Conviértete en el ángel guardián de uno de nuestros residentes permanentes y transforma su vida con tu apoyo mensual.</p>
-            <a href="#formulario-apadrina" 
-               class="inline-block bg-white hover:bg-gray-100 text-amber-600 font-bold py-3 px-6 rounded-full transition-all">
-                Apadrinar Ahora
-            </a>
+    <header class="page-header bg-dark section" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=1000&auto=format&fit=crop'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h1 class="section-title" style="color: white;">Sé su Ángel Guardián</h1>
+            <p class="section-subtitle" style="color: var(--text-light);">Apadrina a nuestros residentes permanentes y cambia su mundo con un pequeño aporte mensual.</p>
+            <a href="#casos-urgentes" class="btn btn-primary">Ver casos urgentes</a>
         </div>
-    </section>
+    </header>
 
-    <!-- How Sponsorship Works -->
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">¿Cómo Funciona el Apadrinamiento?</h2>
-            <p class="text-center text-gray-600 max-w-3xl mx-auto mb-12">
-                Tu aportación mensual cubre los gastos específicos de un perrito que no puede ser adoptado por edad, condición médica o historial traumático.
-            </p>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="sponsor-benefit bg-gray-50 p-8 rounded-lg text-center transition-all">
-                    <div class="benefit-icon bg-amber-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4 transition-all">
-                        <i class="fas fa-dog text-amber-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">1. Elige tu ahijado</h3>
-                    <p class="text-gray-600">Selecciona uno de nuestros perritos permanentes o déjanos asignarte uno que necesite especialmente tu apoyo.</p>
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">¿Cómo funciona el apadrinamiento?</h2>
+            <p class="section-subtitle">Tu ayuda mensual garantiza su calidad de vida.</p>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon"><i class="fas fa-paw"></i></div>
+                    <h3>Elige tu Ahijado</h3>
+                    <p>Selecciona a uno de los perritos que por edad o salud viven permanentemente en el refugio.</p>
                 </div>
-                
-                <div class="sponsor-benefit bg-gray-50 p-8 rounded-lg text-center transition-all">
-                    <div class="benefit-icon bg-amber-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4 transition-all">
-                        <i class="fas fa-hand-holding-heart text-amber-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">2. Establece tu aportación</h3>
-                    <p class="text-gray-600">Elige el monto mensual que deseas donar (desde $10 USD). Puedes cancelar o cambiar cuando lo necesites.</p>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                    <h3>Define tu Aporte</h3>
+                    <p>Elige el monto mensual con el que deseas apoyar (desde S/ 30). Todo suma.</p>
                 </div>
-                
-                <div class="sponsor-benefit bg-gray-50 p-8 rounded-lg text-center transition-all">
-                    <div class="benefit-icon bg-amber-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4 transition-all">
-                        <i class="fas fa-envelope text-amber-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">3. Recibe actualizaciones</h3>
-                    <p class="text-gray-600">Te enviaremos fotos, historias y el impacto concreto de tu apoyo en la vida de tu ahijado.</p>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon"><i class="fas fa-envelope-open-text"></i></div>
+                    <h3>Recibe Amor</h3>
+                    <p>Te enviaremos fotos exclusivas, reportes de salud y una carta de tu ahijado cada mes.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-icon"><i class="fas fa-users"></i></div>
+                    <h3>Visitas VIP</h3>
+                    <p>Podrás agendar visitas especiales para pasar tiempo de calidad con tu ahijado.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Dogs Available for Sponsorship -->
-    <section class="py-20 bg-amber-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">Nuestros Peludos que Necesitan Padrinos</h2>
-            <p class="text-center text-gray-600 max-w-3xl mx-auto mb-12">
-                Estos angelitos han encontrado un hogar seguro en nuestro refugio permanente y necesitan tu apoyo para mantener su calidad de vida.
-            </p>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Dog 1 -->
-                <div class="dog-card bg-white rounded-lg overflow-hidden shadow-md transition-all">
-                    <div class="relative">
-                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2b2d5e62-8e2c-408e-bf77-71545cf5c676.png" 
-                             alt="Perrito anciano labrador dorado con cara blanca durmiendo cómodamente en su cama" 
-                             class="w-full h-64 object-cover">
-                        <div class="absolute top-3 right-3 bg-amber-600 text-white px-3 py-1 rounded-full text-sm font-bold">
-                            ¡Urgente!
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Don Chicho</h3>
-                        <div class="flex items-center mb-4">
-                            <span class="bg-gray-100 text-gray-800 text-xs font-semibold px-2.5 py-0.5 rounded">15 años</span>
-                            <span class="ml-2 text-gray-600">Labrador dorado</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Rescatado de un hogar donde lo abandonaron por su edad. Necesita medicamentos diarios para sus articulaciones.</p>
-                        <div class="mb-4">
-                            <div class="flex justify-between text-sm text-gray-600 mb-1">
-                                <span>Costo mensual: $80</span>
-                                <span>10% alcanzado</span>
-                            </div>
-                            <div class="progress-bar bg-gray-200">
-                                <div class="progress-fill" style="width: 10%"></div>
-                            </div>
-                        </div>
-                        <button class="w-full bg-amber-600 hover:bg-amber-700 text-white py-2 px-4 rounded-lg transition-all">
-                            Apadrinar a Chicho
-                        </button>
-                    </div>
-                </div>
+    <section id="casos-urgentes" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Necesitan Padrinos Urgentemente</h2>
+            <div class="dogs-grid">
                 
-                <!-- Dog 2 -->
-                <div class="dog-card bg-white rounded-lg overflow-hidden shadow-md transition-all">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7ad54c0d-b67b-4495-9529-29b5eaaf08a6.png" 
-                         alt="Perrito mestizo de tamaño mediano con tres patas jugando en el pasto" 
-                         class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Tres Patitas</h3>
-                        <div class="flex items-center mb-4">
-                            <span class="bg-gray-100 text-gray-800 text-xs font-semibold px-2.5 py-0.5 rounded">6 años</span>
-                            <span class="ml-2 text-gray-600">Mestizo</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Perdió una pata en un accidente antes de ser rescatado. Aún así, es el perro más alegre del refugio.</p>
-                        <div class="mb-4">
-                            <div class="flex justify-between text-sm text-gray-600 mb-1">
-                                <span>Costo mensual: $60</span>
-                                <span>45% alcanzado</span>
-                            </div>
-                            <div class="progress-bar bg-gray-200">
-                                <div class="progress-fill" style="width: 45%"></div>
-                            </div>
-                        </div>
-                        <button class="w-full bg-amber-600 hover:bg-amber-700 text-white py-2 px-4 rounded-lg transition-all">
-                            Apadrinar a Tres Patitas
-                        </button>
+                <article class="dog-card">
+                    <div class="card-image">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2b2d5e62-8e2c-408e-bf77-71545cf5c676.png" alt="Don Chicho">
+                        <span class="tag tag-male">Urgente</span>
                     </div>
-                </div>
-                
-            </div>
-           
-        </div>
-    </section>
+                    <div class="card-content">
+                        <h3>Don Chicho</h3>
+                        <p class="age">15 años • Tratamiento Articular</p>
+                        <p class="desc">Chicho necesita pastillas diarias para no sentir dolor. Su mirada agradecida lo vale todo.</p>
+                        
+                        <div class="progress-container">
+                            <div class="progress-labels">
+                                <span>Recaudado: 10%</span>
+                                <span>Meta: S/ 300</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 10%;"></div>
+                            </div>
+                        </div>
 
-    <!-- Sponsorship Benefits -->
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
-                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Beneficios de Apadrinar</h2>
-                    
-                    <ul class="space-y-6 text-gray-700">
-                        <li class="flex items-start">
-                            <div class="bg-amber-100 p-2 rounded-full mr-4">
-                                <i class="fas fa-envelope-open-text text-amber-600"></i>
+                        <div class="card-footer">
+                            <a href="#formulario-apadrinar" class="btn btn-outline full-width" onclick="selectDog('Don Chicho')">Apadrinar a Chicho</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="dog-card">
+                    <div class="card-image">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7ad54c0d-b67b-4495-9529-29b5eaaf08a6.png" alt="Tres Patitas">
+                        <span class="tag tag-female">Especial</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Tres Patitas</h3>
+                        <p class="age">6 años • Amputación</p>
+                        <p class="desc">A pesar de su accidente, es la alegría del refugio. Necesita terapia física mensual.</p>
+                        
+                        <div class="progress-container">
+                            <div class="progress-labels">
+                                <span>Recaudado: 45%</span>
+                                <span>Meta: S/ 250</span>
                             </div>
-                            <span>Reportes mensuales del progreso de tu ahijado</span>
-                        </li>
-                        <li class="flex items-start">
-                            <div class="bg-amber-100 p-2 rounded-full mr-4">
-                                <i class="fas fa-heart text-amber-600"></i>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 45%;"></div>
                             </div>
-                            <span>Carta de agradecimiento y fotos exclusivas</span>
-                        </li>
-                        <li class="flex items-start">
-                            <div class="bg-amber-100 p-2 rounded-full mr-4">
-                                <i class="fas fa-calendar-check text-amber-600"></i>
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="#formulario-apadrinar" class="btn btn-outline full-width" onclick="selectDog('Tres Patitas')">Apadrinar a Tres Patitas</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="dog-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1568572933382-74d440642117?q=80&w=600&auto=format&fit=crop" alt="Nena">
+                        <span class="tag tag-female">Geriatrico</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Abuelita Nena</h3>
+                        <p class="age">12 años • Ceguera parcial</p>
+                        <p class="desc">Nena ve poco con el corazón. Necesita alimento blando especial renal.</p>
+                        
+                        <div class="progress-container">
+                            <div class="progress-labels">
+                                <span>Recaudado: 70%</span>
+                                <span>Meta: S/ 400</span>
                             </div>
-                            <span>Dos visitas anuales al refugio para conocer a tu ahijado</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="md:w-1/2">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/546f7f2e-a3cf-48d8-839c-464ccbeea741.png" 
-                         alt="Voluntaria mostrando una foto de un perrito a su padrino, ambos sonriendo" 
-                         class="rounded-lg shadow-xl w-full h-auto">
-                </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="#formulario-apadrinar" class="btn btn-outline full-width" onclick="selectDog('Abuelita Nena')">Apadrinar a Nena</a>
+                        </div>
+                    </div>
+                </article>
+
             </div>
         </div>
     </section>
 
-    <!-- Sponsorship Form -->
-    <section id="formulario-apadrina" class="py-20 bg-amber-50">
-        <div class="container mx-auto px-6 max-w-4xl">
-            <div class="bg-white p-8 rounded-lg shadow-md">
-                <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">Formulario de Apadrinamiento</h2>
-                <p class="text-center text-gray-600 mb-8">Completa este formulario para convertirte en padrino/madrina de uno de nuestros residentes permanentes</p>
+    <section class="section" id="formulario-apadrinar">
+        <div class="container">
+            <div class="form-container-styled">
+                <h2 class="section-title">Formulario de Padrino</h2>
+                <p class="section-subtitle">¡Gracias por cambiar una vida!</p>
                 
-                <form class="space-y-6">
-                    <!-- Personal Info -->
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label for="nombre" class="block text-gray-700 font-medium mb-2">Nombre Completo *</label>
-                            <input type="text" id="nombre" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" required>
+                <form class="styled-form">
+                    <div class="form-grid-2">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
                         </div>
-                        <div>
-                            <label for="email" class="block text-gray-700 font-medium mb-2">Email *</label>
-                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" required>
-                        </div>
-                        <div>
-                            <label for="telefono" class="block text-gray-700 font-medium mb-2">Teléfono *</label>
-                            <input type="tel" id="telefono" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" required>
-                        </div>
-                        <div>
-                            <label for="pais" class="block text-gray-700 font-medium mb-2">País *</label>
-                            <select id="pais" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" required>
-                                <option value="">Selecciona un país</option>
-                                <option value="MX">México</option>
-                                <option value="US">Estados Unidos</option>
-                                <option value="ES">España</option>
-                                <option value="CO">Colombia</option>
-                                <option value="AR">Argentina</option>
-                                <option value="OT">Otro</option>
-                            </select>
+                        <div class="form-group">
+                            <label for="email">Telefono:</label>
+                            <input type="number" id="email" name="email" placeholder="Para enviarte reportes" required>
                         </div>
                     </div>
-                    
-                    <!-- Dog Selection -->
-                    <div>
-                        <label class="block text-gray-700 font-medium mb-2">Selecciona un perrito para apadrinar *</label>
-                        <div class="space-y-2">
-                            <div class="flex items-center">
-                                <input type="radio" id="dog-choice-1" name="dog-choice" value="Chicho" class="mr-2" checked>
-                                <label for="dog-choice-1">Don Chicho (15 años) - Necesita $80/mes</label>
-                            </div>
-                            <div class="flex items-center">
-                                <input type="radio" id="dog-choice-2" name="dog-choice" value="Tres Patitas" class="mr-2">
-                                <label for="dog-choice-2">Tres Patitas (6 años) - Necesita $60/mes</label>
-                            </div>
-                            <div class="flex items-center">
-                                <input type="radio" id="dog-choice-3" name="dog-choice" value="Asignar" class="mr-2">
-                                <label for="dog-choice-3">Prefiero que me asignen un perrito según necesidad</label>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Sponsorship Level -->
-                    <div>
-                        <label for="sponsor-level" class="block text-gray-700 font-medium mb-2">Nivel de Apadrinamiento *</label>
-                        <select id="sponsor-level" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" required>
-                            <option value="">Selecciona un nivel</option>
-                            <option value="basic">Básico ($10-$29/mes) - Apoyo parcial</option>
-                            <option value="standard">Estándar ($30-$59/mes) - Apoya la mayoría de necesidades</option>
-                            <option value="premium">Premium ($60-$99/mes) - Cubre todos los gastos</option>
-                            <option value="custom">Personalizado (Otro monto)</option>
+
+                    <div class="form-group">
+                        <label for="ahijado">¿A quién deseas apadrinar?</label>
+                        <select id="ahijado" name="ahijado" required>
+                            <option value="">Selecciona un peludo</option>
+                            <option value="Don Chicho">Don Chicho</option>
+                            <option value="Tres Patitas">Tres Patitas</option>
+                            <option value="Abuelita Nena">Abuelita Nena</option>
+                            <option value="General">Quiero aportar al fondo general</option>
                         </select>
                     </div>
-                    
-                    <!-- Payment Method -->
-                    <div>
-                        <label class="block text-gray-700 font-medium mb-2">Método de Pago *</label>
-                        <div class="grid md:grid-cols-3 gap-4">
-                            <div class="flex items-center">
-                                <input type="radio" id="payment-card" name="payment" value="card" class="mr-2" checked>
-                                <label for="payment-card">Yape / Plin</label>
-                            </div>
-                            <div class="flex items-center">
-                                <input type="radio" id="payment-paypal" name="payment" value="paypal" class="mr-2">
-                                <label for="payment-paypal">PayPal</label>
-                            </div>
-                            <div class="flex items-center">
-                                <input type="radio" id="payment-transfer" name="payment" value="transfer" class="mr-2">
-                                <label for="payment-transfer">Transferencia</label>
-                            </div>
+
+                    <div class="form-group">
+                        <label>Monto de aporte mensual (S/):</label>
+                        <div class="radio-buttons-group">
+                            <label class="radio-option">
+                                <input type="radio" name="monto" value="30"> S/ 30
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="monto" value="50" checked> S/ 50
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="monto" value="100"> S/ 100
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="monto" value="otro"> Otro
+                            </label>
                         </div>
                     </div>
-                    
-                    <!-- Submit Button -->
-                    <div class="text-center pt-6">
-                        <button type="submit" class="inline-block bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-lg transition-all">
-                            Convertirme en Padrino/Madrina
-                        </button>
+
+                    <div class="form-group">
+                        <label for="metodo">Método de pago preferido:</label>
+                        <select id="metodo" name="metodo">
+                            <option value="yape">Yape / Plin</option>
+                            <option value="transferencia">Transferencia BCP/Interbank</option>
+                            <option value="paypal">PayPal (Internacional)</option>
+                        </select>
+                    </div>
+
+                    <div class="center-btn">
+                        <button type="submit" class="btn btn-primary">Confirmar Apadrinamiento <i class="fas fa-heart"></i></button>
                     </div>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Success Stories -->
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Historias de Éxito</h2>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-amber-50 p-8 rounded-lg">
-                    <div class="flex items-center mb-4">
-                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b1c47a62-ea15-4a22-8047-3b30c4c6790b.png" 
-                             alt="Familia sonriente posando con foto de su perrito apadrinado" 
-                             class="w-16 h-16 rounded-full object-cover">
-                        <div class="ml-4">
-                            <h4 class="font-bold text-gray-800">Familia González</h4>
-                            <p class="text-gray-600">Padrinos de Luna desde 2020</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic">
-                        "Apadrinar a Luna ha sido una experiencia increíble. Aunque no podíamos adoptarla por vivir en un departamento pequeño, nos encanta recibir sus fotos mensuales y saber que estamos ayudando a que tenga una vejez digna. Cada año vamos a visitarla y es como un miembro más de nuestra familia."
-                    </p>
-                </div>
-                
-                <div class="bg-amber-50 p-8 rounded-lg">
-                    <div class="flex items-center mb-4">
-                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4e34c8f1-d3f2-468d-a817-2395f3a4ac7f.png" 
-                             alt="Joven universitario mostrando carta de su perrito apadrinado" 
-                             class="w-16 h-16 rounded-full object-cover">
-                        <div class="ml-4">
-                            <h4 class="font-bold text-gray-800">Carlos Martínez</h4>
-                            <p class="text-gray-600">Padrino de Max desde 2021</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic">
-                        "Como estudiante, el apadrinamiento era la manera perfecta de ayudar. Con solo $15 al mes siento que hago una diferencia real. La carta que me envió el veterinario explicando cómo mi aportación ayudó en la cirugía de Max me emocionó hasta las lágrimas. ¡Ahora todos mis amigos apadrinan también!"
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-6 text-center">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Abrigando A Los Cañetañitos</h3>
-                    <p class="text-gray-400">Rescatando y transformando vidas desde 2015.</p>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Enlaces Rápidos</h4>
-                    <ul class="space-y-2">
-                        <li><a href="https://edwardmedran.github.io/Abrigando/index.html" class="text-gray-400 hover:text-white transition-all">Inicio</a></li>
-                        <li><a href="https://edwardmedran.github.io/Abrigando/menús/apadrina.html" class="text-gray-400 hover:text-white transition-all">Apadrina</a></li>
-                        <li><a href="https://edwardmedran.github.io/Abrigando/menús/donación.html" class="text-gray-400 hover:text-white transition-all">Donación</a></li>
-                        <li><a href="https://edwardmedran.github.io/Abrigando/menús/eligeTuPeludo.html" class="text-gray-400 hover:text-white transition-all">Elige tu Peludo</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Horario</h4>
-                    <p class="text-gray-400">Refugio: Martes a Domingo<br>10:00 am - 6:00 pm</p>
-                    <p class="text-gray-400 mt-2">Oficinas: Lunes a Viernes<br>9:00 am - 5:00 pm</p>
-                </div>
-            </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                <p>© 2025 Abrigando A Los Cañetañitos. Todos los derechos reservados.</p>
-            </div>
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Abrigando A Los Cañetañitos. Hecho con <i class="fas fa-heart"></i> por voluntarios.</p>
         </div>
     </footer>
 
     <script>
-        // Simulate donation progress bars filling
-        document.addEventListener('DOMContentLoaded', function() {
-            const progressBars = document.querySelectorAll('.progress-fill');
-            progressBars.forEach(bar => {
-                const width = bar.style.width;
-                bar.style.width = '0';
-                setTimeout(() => {
-                    bar.style.width = width;
-                }, 100);
-            });
+        // Menú móvil
+        document.querySelector('.mobile-menu-btn').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
         });
+
+        // Script para pre-seleccionar al perro en el formulario al hacer clic en "Apadrinar"
+        function selectDog(dogName) {
+            const select = document.getElementById('ahijado');
+            select.value = dogName;
+            // Scroll suave hacia el formulario
+            document.getElementById('formulario-apadrinar').scrollIntoView({ behavior: 'smooth' });
+        }
     </script>
 </body>
 </html>

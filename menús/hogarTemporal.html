@@ -3,387 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abrigando A Los Cañetañitos</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://edwardmedran.github.io/Abrigando/css/style.css">
+    <title>Abrigando A Los Cañetañitos | Hogar Temporal</title>
+    <link rel="icon" href="../img/LogoAbrigando.jpg" type="image/jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="font-sans bg-gray-50">
-    <!-- Navbar -->
-    <nav class="bg-amber-600 text-white shadow-lg">
-        <div class="container mx-auto px-6 py-3">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center space-x-4">
-                    <img src="https://edwardmedran.github.io/Abrigando/img/LogoAbrigando.jpg" alt="Logo de Patitas Felices - huella de perro en círculo amarillo" class="h-12">
-                    <span class="font-bold text-xl">Abrigando A Los Cañetañitos</span>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="https://edwardmedran.github.io/Abrigando/index.html" class="hover:text-amber-200 transition-all">Inicio</a>
-                    <a href="https://edwardmedran.github.io/Abrigando/menús/eligeTuPeludo.html" class="hover:text-amber-200 transition-all">Adopta</a>
-                </div>
-                <button class="md:hidden focus:outline-none">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <img src="../img/LogoAbrigando.jpg" alt="Logo Abrigando">
+                <span>Abrigando A Los Cañetañitos</span>
+            </a>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            <div class="nav-links">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#nosotros">Nosotros</a>
+                <a href="eligeTuPeludo.html">Adopta</a>
+                <a href="../index.html#ayuda" class="active">Cómo Ayudar</a>
+                <a href="../index.html#contacto">Contacto</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero h-screen flex items-center justify-center text-center text-white">
-        <div class="container mx-auto px-6 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-6">Conviértete en Hogar Temporal</h1>
-            <p class="text-xl mb-8 max-w-3xl mx-auto">Proporciona amor y cuidados temporales a un perrito rescatado mientras encuentra su hogar definitivo.</p>
-            <a href="#formulario" class="inline-block bg-white hover:bg-gray-100 text-amber-600 font-bold py-3 px-8 rounded-full transition-all">
-                Únete Ahora
-            </a>
+    <header class="page-header bg-dark section" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1518717758536-85ae29035b6d?q=80&w=1000&auto=format&fit=crop'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h1 class="section-title" style="color: white;">Salva una vida desde tu sofá</h1>
+            <p class="section-subtitle" style="color: var(--text-light);">Conviértete en el puente entre el abandono y una familia feliz. Sé un Hogar Temporal.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container about-grid">
+            <div class="about-text">
+                <h2>¿Qué es un Hogar Temporal?</h2>
+                <p class="lead">Es brindar un espacio seguro, cariño y cuidados básicos a un rescatado mientras le encontramos su familia definitiva.</p>
+                <p>Muchos perritos no sobreviven en el refugio por estrés o porque necesitan cuidados especiales tras ser rescatados. Tu hogar es el lugar donde sanan sus heridas físicas y emocionales para estar listos para ser adoptados.</p>
+                <p><strong>¡Es la forma más directa de salvar una vida sin comprometerte a largo plazo!</strong></p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1529429612779-c8e40ef2f36d?q=80&w=600&auto=format&fit=crop" alt="Perro descansando en un hogar" style="border-radius: var(--radius); box-shadow: var(--shadow-lg);">
+            </div>
         </div>
     </section>
 
-    <!-- Benefits Section -->
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Beneficios de ser Hogar Temporal</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Benefit 1 -->
-                <div class="bg-gray-50 p-8 rounded-lg text-center">
-                    <div class="bg-amber-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-heart text-amber-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Salvas Vidas</h3>
-                    <p class="text-gray-600">Cada hogar temporal permite que rescatemos a otro perrito de la calle.</p>
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">El proceso es muy sencillo</h2>
+            <p class="section-subtitle">Te acompañamos en cada etapa del camino.</p>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon"><i class="fas fa-file-signature"></i></div>
+                    <h3>Inscríbete</h3>
+                    <p>Llena el formulario al final de esta página para conocerte mejor.</p>
                 </div>
-                
-                <!-- Benefit 2 -->
-                <div class="bg-gray-50 p-8 rounded-lg text-center">
-                    <div class="bg-amber-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-home text-amber-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Sin Costo</h3>
-                    <p class="text-gray-600">Proveemos todos los suministros: alimento, medicinas y accesorios.</p>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon"><i class="fas fa-comments"></i></div>
+                    <h3>Conversamos</h3>
+                    <p>Te contactamos para resolver dudas y encontrar al peludo ideal para tu estilo de vida.</p>
                 </div>
-                
-                <!-- Benefit 3 -->
-                <div class="bg-gray-50 p-8 rounded-lg text-center">
-                    <div class="bg-amber-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-hand-holding-heart text-amber-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Apoyo Continuo</h3>
-                    <p class="text-gray-600">Nuestro equipo está disponible 24/7 para asesorarte en cualquier necesidad.</p>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon"><i class="fas fa-box-open"></i></div>
+                    <h3>Recibes el "Kit de Bienvenida"</h3>
+                    <p>Te entregamos al peludo junto con su alimento y todo lo necesario.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Final Feliz</h3>
+                    <p>Él se va adoptado ¡y tú habrás salvado una vida! (O quizás decidas adoptarlo tú 😉).</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- How It Works -->
-    <section class="py-20 bg-amber-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">¿Cómo Funciona?</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <!-- Step 1 -->
-                <div class="step-card bg-white p-6 rounded-lg shadow-sm text-center transition-all">
-                    <div class="step-icon bg-amber-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4 transition-all">
-                        <span class="text-amber-600 font-bold text-xl">1</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-800 mb-2">Regístrate</h3>
-                    <p class="text-gray-600 text-sm">Completa nuestro formulario de aplicación.</p>
-                </div>
-                
-                <!-- Step 2 -->
-                <div class="step-card bg-white p-6 rounded-lg shadow-sm text-center transition-all">
-                    <div class="step-icon bg-amber-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4 transition-all">
-                        <span class="text-amber-600 font-bold text-xl">2</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-800 mb-2">Entrevista</h3>
-                    <p class="text-gray-600 text-sm">Platicamos para conocer tus capacidades y preferencias.</p>
-                </div>
-                
-                <!-- Step 3 -->
-                <div class="step-card bg-white p-6 rounded-lg shadow-sm text-center transition-all">
-                    <div class="step-icon bg-amber-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4 transition-all">
-                        <span class="text-amber-600 font-bold text-xl">3</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-800 mb-2">Visita</h3>
-                    <p class="text-gray-600 text-sm">Verificamos que tu hogar sea seguro para el perrito.</p>
-                </div>
-                
-                <!-- Step 4 -->
-                <div class="step-card bg-white p-6 rounded-lg shadow-sm text-center transition-all">
-                    <div class="step-icon bg-amber-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4 transition-all">
-                        <span class="text-amber-600 font-bold text-xl">4</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-800 mb-2">¡Recibe!</h3>
-                    <p class="text-gray-600 text-sm">Te entregamos a tu nuevo invitado temporal con todo lo necesario.</p>
-                </div>
+    <section class="section support-section">
+        <div class="container">
+            <div class="support-content">
+                <h2>No estás solo: Nosotros cubrimos los gastos</h2>
+                <p>Tu aporte es el amor y el espacio. Nosotros nos encargamos de lo demás para que no sea una carga económica para ti.</p>
+                <ul class="support-list">
+                    <li><i class="fas fa-check-circle"></i> Alimento balanceado durante toda la estadía.</li>
+                    <li><i class="fas fa-check-circle"></i> Atención veterinaria, medicinas y vacunas.</li>
+                    <li><i class="fas fa-check-circle"></i> Platos, correa y collar si los necesitas.</li>
+                    <li><i class="fas fa-check-circle"></i> Soporte y asesoría 24/7 por parte de nuestro equipo.</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Requirements -->
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row">
-                <div class="md:w-1/2 md:pr-10 mb-10 md:mb-0">
-                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Requisitos</h2>
-                    <ul class="space-y-4 text-gray-600">
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-amber-600 mt-1 mr-3"></i>
-                            <span>Mayor de 21 años</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-amber-600 mt-1 mr-3"></i>
-                            <span>Permiso para tener mascotas en tu vivienda</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-amber-600 mt-1 mr-3"></i>
-                            <span>Disponibilidad para cuidar al perrito el tiempo acordado (2-8 semanas)</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-amber-600 mt-1 mr-3"></i>
-                            <span>Capacidad de llevar al perrito a citas veterinarias cuando sea necesario</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-amber-600 mt-1 mr-3"></i>
-                            <span>Mucho amor para dar</span>
-                        </li>
-                    </ul>
-                    
-                    <div class="mt-8 bg-amber-50 p-6 rounded-lg">
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">Nosotros proveemos:</h3>
-                        <ul class="text-gray-600 space-y-2">
-                            <li class="flex items-start">
-                                <i class="fas fa-paw text-amber-600 mt-1 mr-2 text-xs"></i>
-                                <span>Alimento y accesorios (correa, platos, cama)</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-paw text-amber-600 mt-1 mr-2 text-xs"></i>
-                                <span>Cobertura de todos los gastos veterinarios</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-paw text-amber-600 mt-1 mr-2 text-xs"></i>
-                                <span>Apoyo y asesoramiento continuo</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-paw text-amber-600 mt-1 mr-2 text-xs"></i>
-                                <span>Transporte para citas importantes si es necesario</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+    <section class="section bg-light" id="formulario-hogar">
+        <div class="container">
+            <div class="form-container-styled">
+                <h2 class="section-title">Postula como Hogar Temporal</h2>
+                <p class="section-subtitle">Da el primer paso hoy mismo.</p>
                 
-                <div class="md:w-1/2">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f32b2a7a-e5b7-4bc0-861a-554d807a8e7b.png" alt="Familia acariciando a un perrito mestizo pequeño en su hogar temporal" class="rounded-lg shadow-xl w-full h-auto">
-                </div>
+                <form class="styled-form">
+                    <div class="form-grid-2">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ej: María Pérez" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono / WhatsApp:</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Ej: 999 888 777" required>
+                        </div>
+                    </div>
+
+                    <div class="form-grid-2">
+                        <div class="form-group">
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="ciudad">Distrito / Ciudad:</label>
+                            <input type="text" id="ciudad" name="ciudad" placeholder="Ej: Miraflores, Lima" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="vivienda">Tipo de vivienda:</label>
+                        <select id="vivienda" name="vivienda" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="casa_patio">Casa con patio</option>
+                            <option value="casa_sin_patio">Casa sin patio</option>
+                            <option value="departamento">Departamento</option>
+                            <option value="habitacion">Habitación alquilada</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experiencia">¿Tienes otras mascotas actualmente?</label>
+                        <select id="experiencia" name="experiencia" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="si_perros">Sí, perros</option>
+                            <option value="si_gatos">Sí, gatos</option>
+                            <option value="si_ambos">Sí, ambos</option>
+                            <option value="no">No tengo mascotas actualmente</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Cuéntanos por qué quieres ser hogar temporal y si tienes alguna preferencia (tamaño, edad):</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Tu mensaje aquí..." required></textarea>
+                    </div>
+
+                    <div class="center-btn">
+                        <button type="submit" class="btn btn-primary">Enviar Postulación <i class="fas fa-paper-plane"></i></button>
+                    </div>
+                    <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem; color: var(--text-light);">Al enviar, uno de nuestros voluntarios te contactará pronto.</p>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="py-20 bg-amber-50">
-        <div class="container mx-auto px-6 max-w-4xl">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Preguntas Frecuentes</h2>
-            
-            <div class="bg-white rounded-lg shadow-sm overflow-hidden">
-                <!-- FAQ Item 1 -->
-                <div class="faq-item p-6">
-                    <button class="flex justify-between items-center w-full text-left font-bold text-gray-800">
-                        <span>¿Cuánto tiempo dura un hogar temporal?</span>
-                        <i class="fas fa-plus text-amber+600"></i>
-                    </button>
-                    <div class="mt-3 text-gray-600 hidden">
-                        <p>El tiempo varía según cada caso. Algunos perritos encuentran hogar definitivo en 2-3 semanas, mientras otros pueden necesitar hasta 8 semanas. Antes de asignarte un perrito, te diremos la estimación de tiempo y nunca te dejaremos sin apoyo si necesitas más tiempo.</p>
-                    </div>
-                </div>
-                
-                <!-- FAQ Item 2 -->
-                <div class="faq-item p-6">
-                    <button class="flex justify-between items-center w-full text-left font-bold text-gray-800">
-                        <span>¿Puedo adoptar al perrito que cuido temporalmente?</span>
-                        <i class="fas fa-plus text-amber+600"></i>
-                    </button>
-                    <div class="mt-3 text-gray-600 hidden">
-                        <p>¡Claro que sí! Aproximadamente el 30% de nuestros hogares temporales terminan adoptando a sus invitados peludos. Si esto sucede, celebramos contigo y te ayudamos con todo el proceso de adopción formal.</p>
-                    </div>
-                </div>
-                
-                <!-- FAQ Item 3 -->
-                <div class="faq-item p-6">
-                    <button class="flex justify-between items-center w-full text-left font-bold text-gray-800">
-                        <span>¿Qué pasa si tengo otros animales en casa?</span>
-                        <i class="fas fa-plus text-amber+600"></i>
-                    </button>
-                    <div class="mt-3 text-gray-600 hidden">
-                        <p>Muchos de nuestros hogares temporales tienen otras mascotas. Durante el proceso de aplicación, evaluaremos la compatibilidad y te asignaremos perritos que puedan llevarse bien con tus mascotas actuales. También te daremos consejos para una introducción gradual y segura.</p>
-                    </div>
-                </div>
-                
-                <!-- FAQ Item 4 -->
-                <div class="faq-item p-6">
-                    <button class="flex justify-between items-center w-full text-left font-bold text-gray-800">
-                        <span>¿Qué tipo de perritos necesitan hogar temporal?</span>
-                        <i class="fas fa-plus text-amber+600"></i>
-                    </button>
-                    <div class="mt-3 text-gray-600 hidden">
-                        <p>Ayudamos a todo tipo de perritos: cachorros que necesitan socialización, perritos en recuperación médica, adultos que necesitan demostrar que están listos para adopción, y casos especiales que requieren atención adicional antes de encontrar su hogar definitivo.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Application Form -->
-    <section id="formulario" class="py-20 bg-white">
-        <div class="container mx-auto px-6 max-w-4xl">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Formulario de Aplicación</h2>
-            
-            <form class="space-y-6">
-                <!-- Personal Info -->
-                <div class="bg-gray-50 p-6 rounded-lg">
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">Información Personal</h3>
-                    
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label for="nombre" class="block text-gray-700 font-medium mb-2">Nombre Completo *</label>
-                            <input type="text" id="nombre" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" required>
-                        </div>
-                        <div>
-                            <label for="email" class="block text-gray-700 font-medium mb-2">Email *</label>
-                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" required>
-                        </div>
-                        <div>
-                            <label for="telefono" class="block text-gray-700 font-medium mb-2">Teléfono *</label>
-                            <input type="tel" id="telefono" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" required>
-                        </div>
-                        <div>
-                            <label for="edad" class="block text-gray-700 font-medium mb-2">Edad *</label>
-                            <input type="number" id="edad" min="21" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" required>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Home Info -->
-                <div class="bg-gray-50 p-6 rounded-lg">
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">Información de tu Hogar</h3>
-                    
-                    <div class="space-y-6">
-                        <div>
-                            <label for="direccion" class="block text-gray-700 font-medium mb-2">Dirección Completa *</label>
-                            <input type="text" id="direccion" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" required>
-                        </div>
-                        
-                        <div>
-                            <label class="block text-gray-700 font-medium mb-2">Tipo de Vivienda *</label>
-                            <div class="grid sm:grid-cols-3 gap-4">
-                                <div class="flex items-center">
-                                    <input type="radio" id="casa" name="vivienda" class="mr-2" checked>
-                                    <label for="casa">Casa</label>
-                                </div>
-                                <div class="flex items-center">
-                                    <input type="radio" id="departamento" name="vivienda" class="mr-2">
-                                    <label for="departamento">Departamento</label>
-                                </div>
-                                <div class="flex items-center">
-                                    <input type="radio" id="otro" name="vivienda" class="mr-2">
-                                    <label for="otro">Otro</label>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <label for="alquiler" class="block text-gray-700 font-medium mb-2">¿Tienes permiso para tener mascotas?</label>
-                            <select id="alquiler" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
-                                <option value="si">Sí, tengo permiso explícito</option>
-                                <option value="no">No, no tengo permiso</option>
-                                <option value="no-se">No estoy seguro</option>
-                            </select>
-                        </div>
-                        
-                        <div>
-                            <label for="espacio" class="block text-gray-700 font-medium mb-2">Espacio disponible para el perrito</label>
-                            <textarea id="espacio" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" placeholder="Describe dónde vivirá el perrito, si tienes patio, etc."></textarea>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Experience -->
-                <div class="bg-gray-50 p-6 rounded-lg">
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">Experiencia con Mascotas</h3>
-                    
-                    <div class="space-y-6">
-                        <div>
-                            <label for="mascotas" class="block text-gray-700 font-medium mb-2">¿Tienes otras mascotas en casa?</label>
-                            <select id="mascotas" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
-                                <option value="si">Sí</option>
-                                <option value="no">No</option>
-                            </select>
-                        </div>
-                        
-                        <div>
-                            <label for="experiencia" class="block text-gray-700 font-medium mb-2">¿Has tenido mascotas antes?</label>
-                            <select id="experiencia" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
-                                <option value="si">Sí</option>
-                                <option value="no">No</option>
-                            </select>
-                        </div>
-                        
-                        <div>
-                            <label for="comentarios" class="block text-gray-700 font-medium mb-2">Comentarios adicionales</label>
-                            <textarea id="comentarios" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" placeholder="Cualquier otra información que consideres relevante."></textarea>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Submit Button -->
-                <div class="text-center mt-6">
-                    <button type="submit" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-lg transition-all">
-                        Enviar Solicitud
-                    </button>
-                </div>
-            </form>
-        </div>
-    </section>
-
-<!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12 mt-12">
-        <div class="container mx-auto px-6 text-center">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Abrigando A Los Cañetañitos</h3>
-                    <p class="text-gray-400">Rescatando y transformando vidas desde 2015.</p>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Enlaces Rápidos</h4>
-                    <ul class="space-y-2">
-                        <li><a href="https://edwardmedran.github.io/Abrigando/index.html" class="text-gray-400 hover:text-white transition-all">Inicio</a></li>
-                        <li><a href="https://edwardmedran.github.io/Abrigando/menús/apadrina.html" class="text-gray-400 hover:text-white transition-all">Apadrina</a></li>
-                        <li><a href="https://edwardmedran.github.io/Abrigando/menús/donación.html" class="text-gray-400 hover:text-white transition-all">Donación</a></li>
-                        <li><a href="https://edwardmedran.github.io/Abrigando/menús/eligeTuPeludo.html" class="text-gray-400 hover:text-white transition-all">Elige tu Peludo</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Horario</h4>
-                    <p class="text-gray-400">Refugio: Martes a Domingo<br>10:00 am - 6:00 pm</p>
-                    <p class="text-gray-400 mt-2">Oficinas: Lunes a Viernes<br>9:00 am - 5:00 pm</p>
-                </div>
-            </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                <p>© 2025 Abrigando A Los Cañetañitos. Todos los derechos reservados.</p>
-            </div>
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Abrigando A Los Cañetañitos. Hecho con <i class="fas fa-heart"></i> por voluntarios.</p>
         </div>
     </footer>
 
     <script>
-        // FAQ toggle functionality
-        document.querySelectorAll('.faq-item button').forEach(button => {
-            button.addEventListener('click', () => {
-                const content = button.nextElementSibling;
-                content.classList.toggle('hidden');
-                button.querySelector('i').classList.toggle('fa-plus');
-                button.querySelector('i').classList.toggle('fa-minus');
-            });
+        document.querySelector('.mobile-menu-btn').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
         });
     </script>
 </body>
 </html>
- 
