@@ -22,17 +22,27 @@
             <div class="nav-links">
                 <a href="../index.html">Inicio</a>
                 <a href="../index.html#nosotros">Nosotros</a>
-                <a href="eligeTuPeludo.html">Adopta</a>
+                <a href="adopta.html">Adopta</a>
                 <a href="../index.html#ayuda" class="active">Cómo Ayudar</a>
                 <a href="../index.html#contacto">Contacto</a>
             </div>
         </div>
     </nav>
 
+    <div class="breadcrumbs">
+    <div class="container">
+        <a href="../index.html">Inicio</a> 
+        <i class="fas fa-chevron-right"></i> 
+        <a href="../index.html#ayuda">Como ayudar</a> 
+        <i class="fas fa-chevron-right"></i> 
+        <span class="current">Donaciones</span>
+    </div>
+    </div>
+
     <header class="page-header bg-dark section" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1593134257782-e89567b7718a?q=80&w=1000&auto=format&fit=crop'); background-size: cover; background-position: center;">
         <div class="container">
             <h1 class="section-title" style="color: white;">Tu aporte llena pancitas</h1>
-            <p class="section-subtitle" style="color: var(--text-light);">No necesitamos grandes cantidades, necesitamos grandes corazones. Cada sol cuenta.</p>
+            <p class="section-subtitle" style="color: white;">No necesitamos grandes cantidades, necesitamos grandes corazones. Cada sol cuenta.</p>
             <div class="hero-buttons">
                 <a href="#cuentas" class="btn btn-primary">Ver Cuentas Bancarias <i class="fas fa-arrow-down"></i></a>
             </div>
@@ -175,20 +185,7 @@
         </div>
     </footer>
 
-    <script>
-        // Menú móvil
-        document.querySelector('.mobile-menu-btn').addEventListener('click', () => {
-            document.querySelector('.nav-links').classList.toggle('active');
-        });
-
-        // Función para copiar al portapapeles (UX mejorada)
-        function copyToClipboard(text) {
-            navigator.clipboard.writeText(text).then(() => {
-                alert("¡Número copiado al portapapeles! (" + text + ")");
-            }).catch(err => {
-                console.error('Error al copiar: ', err);
-            });
-        }
-    </script>
+    <script src="../js/main.js"></script>
+    <script src="../js/ayuda.js"></script>  
 </body>
 </html>
