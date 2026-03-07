@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abrigando A Los Cañetañitos | Inicio</title>
-    <link rel="icon" href="../img/LogoAbrigando.jpg" type="image/jpeg">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/LogoAbrigando.jpg" type="image/jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Navbar -->
     <nav class="navbar">
         <div class="container nav-container">
             <div class="logo">
@@ -29,31 +28,44 @@
         </div>
     </nav>
 
-    <!-- Primer bloque, eslogan -->
     <section id="inicio" class="hero">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <h1>Dale una segunda <br> <span class="highlight">oportunidad de vida</span></h1>
+            <div class="hero-badge">
+                <i class="fas fa-paw"></i>
+                Refugio activo desde 2015
+            </div>
+            <h1>Dale una segunda <br><span class="highlight">oportunidad de vida</span></h1>
             <p>Rescatamos, rehabilitamos y buscamos hogares amorosos para perritos que lo han perdido todo.</p>
             <div class="hero-buttons">
                 <a href="paginas/adopta.html" class="btn btn-primary">Adoptar ahora <i class="fas fa-paw"></i></a>
                 <a href="#ayuda" class="btn btn-secondary">Cómo Ayudar</a>
             </div>
         </div>
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+            Scroll
+        </div>
     </section>
 
-    <!-- Nuestra mision -->
     <section id="nosotros" class="section">
         <div class="container">
-            <h2 class="section-title">Nuestra Misión</h2>
             <div class="about-grid">
                 <div class="about-image">
                     <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6f422706-759e-433a-b727-82dd61b06f61.png" alt="Voluntarios con perros">
+                    <div class="floating-stat">
+                        <div class="stat-icon">🐾</div>
+                        <div>
+                            <h4>1,200+</h4>
+                            <p>Vidas rescatadas</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="about-text">
-                    <p class="lead">En <strong>Abrigando A Los Cañetañitos</strong> nos dedicamos a transformar el dolor en esperanza.</p>
-                    <p>Desde 2015 hemos logrado rescatar más de 1,200 perritos de las calles, brindándoles atención médica, alimento y un refugio seguro.</p>
-                    
+                    <div class="section-label">Nuestra Misión</div>
+                    <h2 class="section-title">Transformamos el dolor<br>en <em>esperanza</em></h2>
+                    <p class="lead">En <strong>Abrigando A Los Cañetañitos</strong> nos dedicamos a darle una segunda oportunidad a cada peludo que lo necesita.</p>
+                    <p>Desde 2015 hemos rescatado más de 1,200 perritos de las calles, brindándoles atención médica, alimento y un refugio seguro mientras encuentran un hogar definitivo.</p>
                     <div class="stats-container">
                         <div class="stat-card">
                             <i class="fas fa-paw"></i>
@@ -71,14 +83,14 @@
         </div>
     </section>
 
-    <!-- Perros en Adopcion -->
-    <section id="adopta" class="section bg-light">
+    <section id="adopta" class="section bg-cream">
         <div class="container">
-            <h2 class="section-title">Esperando un Hogar</h2>
-            <p class="section-subtitle">Conoce a estos angelitos que buscan una familia.</p>
-            
+            <div class="section-header center">
+                <div class="section-label">Adopción</div>
+                <h2 class="section-title">Esperando un <em>hogar</em></h2>
+                <p class="section-subtitle">Conoce a estos angelitos que buscan una familia que los ame para siempre.</p>
+            </div>
             <div class="dogs-grid">
-                <!-- Perro 1 -->
                 <article class="dog-card">
                     <div class="card-image">
                         <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/90414d37-baa5-4c3e-8fe4-6fb4f31e5144.png" alt="Max">
@@ -86,14 +98,13 @@
                     </div>
                     <div class="card-content">
                         <h3>Max</h3>
-                        <p class="age">2 años • Labrador Mix</p>
+                        <p class="age">2 años &bull; Labrador Mix</p>
                         <p class="desc">Max es energía pura. Adora correr y jugar con niños. Ideal para familias activas.</p>
                         <div class="card-footer">
                             <a href="peludos/max.html" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </article>
-                <!-- Perro 2  -->
                 <article class="dog-card">
                     <div class="card-image">
                         <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/661e0bc7-8a97-49bd-b76e-97c76c90cfc0.png" alt="Luna">
@@ -101,14 +112,13 @@
                     </div>
                     <div class="card-content">
                         <h3>Luna</h3>
-                        <p class="age">3 años • Mestiza</p>
-                        <p class="desc">Tranquila y cariñosa. Perfecta para quienes buscan compañía serena.</p>
+                        <p class="age">3 años &bull; Mestiza</p>
+                        <p class="desc">Tranquila y cariñosa. Perfecta para quienes buscan una compañera serena y amorosa.</p>
                         <div class="card-footer">
                             <a href="peludos/luna.html" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </article>
-                <!-- Perro 3  -->
                 <article class="dog-card">
                     <div class="card-image">
                         <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8a84e1dc-e5cb-42dd-b96d-ec889ce66cfc.png" alt="Toby">
@@ -116,8 +126,8 @@
                     </div>
                     <div class="card-content">
                         <h3>Toby</h3>
-                        <p class="age">5 años • Beagle</p>
-                        <p class="desc">Un explorador nato. Le encantan los paseos largos y olfatear todo.</p>
+                        <p class="age">5 años &bull; Beagle</p>
+                        <p class="desc">Un explorador nato. Le encantan los paseos largos y olfatear todo a su paso.</p>
                         <div class="card-footer">
                             <a href="peludos/toby.html" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
                         </div>
@@ -125,61 +135,68 @@
                 </article>
             </div>
             <div class="center-btn">
-                <a href="paginas/adopta.html" class="btn btn-outline">Ver todos los peludos</a>
+                <a href="paginas/adopta.html" class="btn btn-outline">Ver todos los peludos <i class="fas fa-paw"></i></a>
             </div>
         </div>
     </section>
 
-    <!-- Como puedes ayudar -->
     <section id="ayuda" class="section">
         <div class="container">
-            <h2 class="section-title">¿Cómo Puedes Ayudar?</h2>
+            <div class="section-header center">
+                <div class="section-label">Únete a la causa</div>
+                <h2 class="section-title">¿Cómo puedes <em>ayudar</em>?</h2>
+                <p class="section-subtitle">Hay muchas formas de sumarte. Cada gesto, por pequeño que sea, cambia vidas.</p>
+            </div>
             <div class="help-grid">
-                <!-- Opcion 1 -->
                 <div class="help-card">
                     <div class="icon-circle"><i class="fas fa-home"></i></div>
                     <h3>Hogar Temporal</h3>
-                    <p>Dales techo mientras encuentran su familia definitiva. Nosotros cubrimos los gastos.</p>
+                    <p>Dales techo mientras encuentran su familia definitiva. Nosotros cubrimos los gastos veterinarios y de alimentación.</p>
                     <a href="paginas/hogarTemporal.html" class="read-more">Saber más</a>
                 </div>
-                <!-- Opcion 2 -->
                 <div class="help-card">
                     <div class="icon-circle"><i class="fas fa-hand-holding-heart"></i></div>
                     <h3>Apadrina</h3>
-                    <p>Ayuda mensualmente a los perritos que viven permanentemente en el refugio.</p>
+                    <p>Ayuda mensualmente a los perritos que viven permanentemente en el refugio con un aporte simbólico.</p>
                     <a href="paginas/apadrina.html" class="read-more">Saber más</a>
                 </div>
-                <!-- Opcion 3 -->
                 <div class="help-card">
                     <div class="icon-circle"><i class="fas fa-donate"></i></div>
                     <h3>Donaciones</h3>
-                    <p>Tu aporte económico o en especies nos permite seguir salvando vidas.</p>
+                    <p>Tu aporte económico o en especies nos permite seguir salvando vidas. Todo suma, todo ayuda.</p>
                     <a href="paginas/donaciones.html" class="read-more">Saber más</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contactanos -->
     <section id="contacto" class="section bg-dark">
         <div class="container">
             <div class="contact-wrapper">
-                <!-- Info Contacto -->
                 <div class="contact-info">
-                    <h2>Contáctanos</h2>
-                    <p>Estamos listos para responder tus dudas.</p>
+                    <div class="section-label" style="background: rgba(200,88,26,0.2); color: #F2A56E;">Contáctanos</div>
+                    <h2>Estamos aquí<br>para ayudarte</h2>
+                    <p>¿Tienes dudas sobre adopción, apadrinamiento o quieres ser voluntario? Escríbenos.</p>
                     <ul class="info-list">
-                        <li><i class="fas fa-map-marker-alt"></i> Calle Rescate #123, Lima</li>
-                        <li><i class="fas fa-phone-alt"></i> +51 123 456 789</li>
-                        <li><i class="fas fa-envelope"></i> contacto@abrigando.org</li>
+                        <li>
+                            <div class="icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
+                            Calle Rescate #123, Lima
+                        </li>
+                        <li>
+                            <div class="icon-wrap"><i class="fas fa-phone-alt"></i></div>
+                            +51 123 456 789
+                        </li>
+                        <li>
+                            <div class="icon-wrap"><i class="fas fa-envelope"></i></div>
+                            contacto@abrigando.org
+                        </li>
                     </ul>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-                <!-- Form -->
                 <form class="contact-form" id="contactForm">
                     <div class="form-group">
                         <input type="text" placeholder="Tu Nombre" required>
@@ -190,13 +207,12 @@
                     <div class="form-group">
                         <textarea rows="4" placeholder="Tu Mensaje" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary full-width">Enviar Mensaje</button>
+                    <button type="submit" class="btn btn-primary full-width">Enviar Mensaje <i class="fas fa-paper-plane"></i></button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="main-footer">
         <div class="container">
             <p>&copy; 2025 Abrigando A Los Cañetañitos. Hecho con <i class="fas fa-heart"></i> por voluntarios.</p>
