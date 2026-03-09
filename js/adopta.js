@@ -1,90 +1,96 @@
 /* =========================================
    LÓGICA DE FILTROS Y PAGINACIÓN
+   Soporta filtro doble: especie + sexo
    ========================================= */
-const itemsPerPage = 6; 
+const itemsPerPage = 6;
 let currentPage = 1;
-let currentFilter = 'all';
+let activeSpecies = 'all';   // all | perro | gato
+let activeGender  = 'all';   // all | macho | hembra
 
-const allDogs = Array.from(document.querySelectorAll('.filterable'));
-const dogsContainer = document.getElementById('dogs-container');
+const allCards            = Array.from(document.querySelectorAll('.filterable'));
+const cardsContainer      = document.getElementById('dogs-container');
 const paginationContainer = document.getElementById('pagination-controls');
-const filterButtons = document.querySelectorAll('.filter-btn');
-const noResultsMessage = document.getElementById('no-results-message');
+const noResultsMessage    = document.getElementById('no-results-message');
+
+function matchesFilters(card) {
+    const species  = card.getAttribute('data-species');
+    const category = card.getAttribute('data-category');
+    const speciesOk = activeSpecies === 'all' || species  === activeSpecies;
+    const genderOk  = activeGender  === 'all' || category === activeGender;
+    return speciesOk && genderOk;
+}
 
 function updateDisplay() {
-    const filteredDogs = allDogs.filter(dog => {
-        if (currentFilter === 'all') return true;
-        return dog.getAttribute('data-category') === currentFilter;
-    });
-
-    const totalPages = Math.ceil(filteredDogs.length / itemsPerPage);
-    
+    const filtered = allCards.filter(matchesFilters);
+    const totalPages = Math.ceil(filtered.length / itemsPerPage);
     if (currentPage > totalPages) currentPage = totalPages || 1;
-    if (currentPage < 1) currentPage = 1;
+    if (currentPage < 1)          currentPage = 1;
 
-    const startIndex = (currentPage - 1) * itemsPerPage;
-    const endIndex = startIndex + itemsPerPage;
-    const dogsToShow = filteredDogs.slice(startIndex, endIndex);
+    const toShow = filtered.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
-    allDogs.forEach(dog => dog.style.display = 'none');
+    allCards.forEach(c => c.style.display = 'none');
 
-    if (dogsToShow.length > 0) {
-        dogsToShow.forEach(dog => dog.style.display = 'block');
-        if(noResultsMessage) noResultsMessage.style.display = 'none';
-        dogsContainer.style.display = 'grid'; 
+    if (toShow.length > 0) {
+        toShow.forEach(c => c.style.display = 'block');
+        if (noResultsMessage) noResultsMessage.style.display = 'none';
+        cardsContainer.style.display = 'grid';
     } else {
-        if(noResultsMessage) noResultsMessage.style.display = 'block';
-        dogsContainer.style.display = 'none';
+        if (noResultsMessage) noResultsMessage.style.display = 'block';
+        cardsContainer.style.display = 'none';
     }
-    
     renderPagination(totalPages);
 }
 
 function renderPagination(totalPages) {
-    if(!paginationContainer) return;
-    paginationContainer.innerHTML = ''; 
-
+    if (!paginationContainer) return;
+    paginationContainer.innerHTML = '';
     if (totalPages <= 1) return;
 
-    const prevBtn = createPaginationBtn('<i class="fas fa-chevron-left"></i>', () => {
+    const prev = createBtn('<i class="fas fa-chevron-left"></i>', () => {
         if (currentPage > 1) { currentPage--; updateDisplay(); }
     });
-    if (currentPage === 1) prevBtn.classList.add('disabled');
-    paginationContainer.appendChild(prevBtn);
+    if (currentPage === 1) prev.classList.add('disabled');
+    paginationContainer.appendChild(prev);
 
     for (let i = 1; i <= totalPages; i++) {
-        const pageBtn = createPaginationBtn(i, () => {
-            currentPage = i;
-            updateDisplay();
-        });
-        if (i === currentPage) pageBtn.classList.add('active');
-        paginationContainer.appendChild(pageBtn);
+        const btn = createBtn(i, () => { currentPage = i; updateDisplay(); });
+        if (i === currentPage) btn.classList.add('active');
+        paginationContainer.appendChild(btn);
     }
 
-    const nextBtn = createPaginationBtn('<i class="fas fa-chevron-right"></i>', () => {
+    const next = createBtn('<i class="fas fa-chevron-right"></i>', () => {
         if (currentPage < totalPages) { currentPage++; updateDisplay(); }
     });
-    if (currentPage === totalPages || totalPages === 0) nextBtn.classList.add('disabled');
-    paginationContainer.appendChild(nextBtn);
+    if (currentPage === totalPages || totalPages === 0) next.classList.add('disabled');
+    paginationContainer.appendChild(next);
 }
 
-function createPaginationBtn(text, onClick) {
+function createBtn(html, onClick) {
     const btn = document.createElement('button');
-    btn.innerHTML = text;
+    btn.innerHTML = html;
     btn.className = 'page-btn';
     btn.addEventListener('click', onClick);
     return btn;
 }
 
-filterButtons.forEach(btn => {
+document.querySelectorAll('.filter-btn[data-species]').forEach(btn => {
     btn.addEventListener('click', () => {
-        filterButtons.forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.filter-btn[data-species]').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
-        currentFilter = btn.getAttribute('data-filter');
+        activeSpecies = btn.getAttribute('data-species');
         currentPage = 1;
         updateDisplay();
     });
 });
 
-// Inicializar al cargar
-if (dogsContainer) updateDisplay();
+document.querySelectorAll('.filter-btn[data-gender]').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn[data-gender]').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeGender = btn.getAttribute('data-gender');
+        currentPage = 1;
+        updateDisplay();
+    });
+});
+
+if (cardsContainer) updateDisplay();

@@ -7,7 +7,6 @@
     <link rel="icon" href="../img/LogoAbrigando.jpg" type="image/jpeg">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -31,26 +30,47 @@
 
     <header class="page-header bg-dark section">
         <div class="container">
-            <div class="section-label" style="background: rgba(200,88,26,0.2); color: #F2A56E; margin-bottom: 1rem;">Adopción</div><h1 class="section-title" style="color: white; font-style: normal;">Encuentra a tu compañero <em style="font-style: italic; color: #F2A56E;">ideal</em></h1>
-            <p class="section-subtitle" style="color: white;">Explora a nuestros rescataditos. Ellos están esperando por ti.</p>
+            <div class="section-label" style="background: rgba(200,88,26,0.2); color: #F2A56E; margin-bottom: 1rem;">Adopción</div>
+            <h1 class="section-title" style="color: white; font-style: normal;">Encuentra a tu compañero <em style="font-style: italic; color: #F2A56E;">ideal</em></h1>
+            <p class="section-subtitle" style="color: white;">Perritos y gatitos rescatados esperan por ti. Dales el hogar que merecen.</p>
+        </div>
+        <div class="breadcrumbs">
+            <div class="container">
+                <a href="../index.html">Inicio</a>
+                <i class="fas fa-chevron-right bc-sep"></i>
+                <span class="current">Adopta</span>
+            </div>
         </div>
     </header>
 
     <section class="section">
         <div class="container">
-            
-            <div class="filters-container">
-                <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="macho">Machos</button>
-                <button class="filter-btn" data-filter="hembra">Hembras</button>
+
+            <!-- FILTROS: Especie + Sexo -->
+            <div class="filter-groups">
+                <div class="filter-group">
+                    <span class="filter-group-label">Especie</span>
+                    <button class="filter-btn active" data-species="all"><i class="fas fa-paw"></i> Todos</button>
+                    <button class="filter-btn" data-species="perro">🐶 Perros</button>
+                    <button class="filter-btn" data-species="gato">🐱 Gatos</button>
+                </div>
+                <div class="filter-group">
+                    <span class="filter-group-label">Sexo</span>
+                    <button class="filter-btn active" data-gender="all">Todos</button>
+                    <button class="filter-btn" data-gender="macho">Machos</button>
+                    <button class="filter-btn" data-gender="hembra">Hembras</button>
+                </div>
             </div>
 
+            <!-- GRID — orden mezclado: perro, gato, perro, gato... -->
             <div class="dogs-grid" id="dogs-container">
-                
-                <article class="dog-card filterable" data-category="macho">
+
+                <!-- 1. Max — perro macho -->
+                <article class="dog-card filterable" data-species="perro" data-category="macho">
                     <div class="card-image">
                         <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?q=80&w=600&auto=format&fit=crop" alt="Max">
-                        <span class="tag tag-male">Macho</span>
+                        <span class="tag tag-dog">🐶 Perro</span>
+                        <span class="tag tag-male" style="top:52px;">Macho</span>
                     </div>
                     <div class="card-content">
                         <h3>Max</h3>
@@ -59,10 +79,26 @@
                     </div>
                 </article>
 
-                <article class="dog-card filterable" data-category="hembra">
+                <!-- 2. Nala — gato hembra -->
+                <article class="dog-card filterable" data-species="gato" data-category="hembra">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?q=80&w=600&auto=format&fit=crop" alt="Nala">
+                        <span class="tag tag-cat">🐱 Gato</span>
+                        <span class="tag tag-female" style="top:52px;">Hembra</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Nala</h3>
+                        <p class="age">2 años • Doméstico</p>
+                        <a href="../peludos/nala.html" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- 3. Luna — perra hembra -->
+                <article class="dog-card filterable" data-species="perro" data-category="hembra">
                     <div class="card-image">
                         <img src="https://images.unsplash.com/photo-1583511655826-05700d52f4d9?q=80&w=600&auto=format&fit=crop" alt="Luna">
-                        <span class="tag tag-female">Hembra</span>
+                        <span class="tag tag-dog">🐶 Perro</span>
+                        <span class="tag tag-female" style="top:52px;">Hembra</span>
                     </div>
                     <div class="card-content">
                         <h3>Luna</h3>
@@ -71,10 +107,26 @@
                     </div>
                 </article>
 
-                <article class="dog-card filterable" data-category="macho">
+                <!-- 4. Simón — gato macho -->
+                <article class="dog-card filterable" data-species="gato" data-category="macho">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=600&auto=format&fit=crop" alt="Simón">
+                        <span class="tag tag-cat">🐱 Gato</span>
+                        <span class="tag tag-male" style="top:52px;">Macho</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Simón</h3>
+                        <p class="age">3 años • Atigrado</p>
+                        <a href="../peludos/simon.html" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- 5. Toby — perro macho -->
+                <article class="dog-card filterable" data-species="perro" data-category="macho">
                     <div class="card-image">
                         <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?q=80&w=600&auto=format&fit=crop" alt="Toby">
-                        <span class="tag tag-male">Macho</span>
+                        <span class="tag tag-dog">🐶 Perro</span>
+                        <span class="tag tag-male" style="top:52px;">Macho</span>
                     </div>
                     <div class="card-content">
                         <h3>Toby</h3>
@@ -82,86 +134,113 @@
                         <a href="../peludos/toby.html" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
-                
 
-                <article class="dog-card filterable" data-category="macho">
+                <!-- 6. Mia — gato hembra -->
+                <article class="dog-card filterable" data-species="gato" data-category="hembra">
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1591160690555-5debfba289f0?q=80&w=600&auto=format&fit=crop" alt="Coco">
-                        <span class="tag tag-male">Macho</span>
+                        <img src="https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?q=80&w=600&auto=format&fit=crop" alt="Mia">
+                        <span class="tag tag-cat">🐱 Gato</span>
+                        <span class="tag tag-female" style="top:52px;">Hembra</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Mia</h3>
+                        <p class="age">1 año • Angora Mix</p>
+                        <a href="../peludos/mia.html" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- 7. Coco — perro macho -->
+                <article class="dog-card filterable" data-species="perro" data-category="macho">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?q=80&w=600&auto=format&fit=crop" alt="Coco">
+                        <span class="tag tag-dog">🐶 Perro</span>
+                        <span class="tag tag-male" style="top:52px;">Macho</span>
                     </div>
                     <div class="card-content">
                         <h3>Coco</h3>
-                        <p class="age">4 meses • Golden R.</p>
-                        <a href="#" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
+                        <p class="age">4 meses • Golden Mix</p>
+                        <a href="../peludos/coco.html" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
 
-                <article class="dog-card filterable" data-category="hembra">
+                <!-- 8. Peluso — gato macho -->
+                <article class="dog-card filterable" data-species="gato" data-category="macho">
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1591160690555-5debfba289f0?q=80&w=600&auto=format&fit=crop" alt="Kira">
-                        <span class="tag tag-female">Hembra</span>
+                        <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?q=80&w=600&auto=format&fit=crop" alt="Peluso">
+                        <span class="tag tag-cat">🐱 Gato</span>
+                        <span class="tag tag-male" style="top:52px;">Macho</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Peluso</h3>
+                        <p class="age">4 años • Mestizo</p>
+                        <a href="../peludos/peluso.html" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- 9. Kira — perra hembra -->
+                <article class="dog-card filterable" data-species="perro" data-category="hembra">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1568572933382-74d440642117?q=80&w=600&auto=format&fit=crop" alt="Kira">
+                        <span class="tag tag-dog">🐶 Perro</span>
+                        <span class="tag tag-female" style="top:52px;">Hembra</span>
                     </div>
                     <div class="card-content">
                         <h3>Kira</h3>
-                        <p class="age">1 año • Husky</p>
-                        <a href="#" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
+                        <p class="age">1 año • Husky Siberiano</p>
+                        <a href="../peludos/kira.html" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
 
-                <article class="dog-card filterable" data-category="macho">
+                <!-- 10. Canela — gato hembra -->
+                <article class="dog-card filterable" data-species="gato" data-category="hembra">
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1591160690555-5debfba289f0?q=80&w=600&auto=format&fit=crop" alt="Rocky">
-                        <span class="tag tag-male">Macho</span>
+                        <img src="https://images.unsplash.com/photo-1548802673-380ab8ebc7b7?q=80&w=600&auto=format&fit=crop" alt="Canela">
+                        <span class="tag tag-cat">🐱 Gato</span>
+                        <span class="tag tag-female" style="top:52px;">Hembra</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Canela</h3>
+                        <p class="age">2 años • Siamesa Mix</p>
+                        <a href="../peludos/canela.html" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- 11. Rocky — perro macho -->
+                <article class="dog-card filterable" data-species="perro" data-category="macho">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1598133894008-61f7fdb8cc3a?q=80&w=600&auto=format&fit=crop" alt="Rocky">
+                        <span class="tag tag-dog">🐶 Perro</span>
+                        <span class="tag tag-male" style="top:52px;">Macho</span>
                     </div>
                     <div class="card-content">
                         <h3>Rocky</h3>
                         <p class="age">4 años • Pastor Alemán</p>
-                        <a href="#" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
+                        <a href="../peludos/rocky.html" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
 
-                <article class="dog-card filterable" data-category="hembra">
+                <!-- 12. Gordo — gato macho -->
+                <article class="dog-card filterable" data-species="gato" data-category="macho">
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1591160690555-5debfba289f0?q=80&w=600&auto=format&fit=crop" alt="Rocky">
-                        <span class="tag tag-female">Hembra</span>
+                        <img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?q=80&w=600&auto=format&fit=crop" alt="Gordo">
+                        <span class="tag tag-cat">🐱 Gato</span>
+                        <span class="tag tag-male" style="top:52px;">Macho</span>
                     </div>
                     <div class="card-content">
-                        <h3>Rocky</h3>
-                        <p class="age">4 años • Pastor Alemán</p>
-                        <a href="#" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <article class="dog-card filterable" data-category="macho">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1591160690555-5debfba289f0?q=80&w=600&auto=format&fit=crop" alt="Rocky">
-                        <span class="tag tag-male">Macho</span>
-                    </div>
-                    <div class="card-content">
-                        <h3>Rocky</h3>
-                        <p class="age">4 años • Pastor Alemán</p>
-                        <a href="#" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <article class="dog-card filterable" data-category="hembra">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1591160690555-5debfba289f0?q=80&w=600&auto=format&fit=crop" alt="Rocky">
-                        <span class="tag tag-female">Hembra</span>
-                    </div>
-                    <div class="card-content">
-                        <h3>Rocky</h3>
-                        <p class="age">4 años • Pastor Alemán</p>
-                        <a href="#" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
+                        <h3>Gordo</h3>
+                        <p class="age">5 años • British Shorthair</p>
+                        <a href="../peludos/gordo.html" class="btn-link">Ver perfil <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
 
             </div>
 
-            <p id="no-results-message" style="display: none; text-align: center; margin-top: 2rem; font-size: 1.2rem;">No encontramos peluditos con esas características en esta página.</p>
+            <p id="no-results-message" style="display: none; text-align: center; margin-top: 2rem; font-size: 1.05rem; color: var(--text-muted);">
+                <i class="fas fa-search" style="color:var(--amber); margin-right:8px;"></i>
+                No encontramos peluditos con esas características. ¡Prueba otra combinación!
+            </p>
 
-            <div class="pagination-container" id="pagination-controls">
-                </div>
+            <div class="pagination-container" id="pagination-controls"></div>
 
         </div>
     </section>
