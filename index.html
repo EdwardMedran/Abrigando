@@ -3,6 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Refugio de animales en Cañete. Adoptamos, rescatamos y rehabilitamos perros y gatos. ¡Dales una segunda oportunidad!">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Abrigando A Los Cañetañitos | Refugio de animales en Cañete">
+    <meta property="og:description" content="Refugio de animales en Cañete. Adoptamos, rescatamos y rehabilitamos perros y gatos. ¡Dales una segunda oportunidad!">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1450778869180-41d0601e046e?q=80&w=1200&auto=format&fit=crop">
+    <meta property="og:url" content="https://abrigando.org/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Abrigando A Los Cañetañitos | Refugio de animales en Cañete">
+    <meta name="twitter:description" content="Refugio de animales en Cañete. Adoptamos, rescatamos y rehabilitamos perros y gatos. ¡Dales una segunda oportunidad!">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1450778869180-41d0601e046e?q=80&w=1200&auto=format&fit=crop">
     <title>Abrigando A Los Cañetañitos | Inicio</title>
     <link rel="icon" href="img/LogoAbrigando.jpg" type="image/jpeg">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
@@ -29,6 +39,7 @@
     </nav>
 
     <section id="inicio" class="hero">
+    <canvas id="paws-canvas" aria-hidden="true"></canvas>
         <div class="hero-overlay"></div>
         <div class="container hero-content">
             <div class="hero-badge">
@@ -143,6 +154,61 @@
         </div>
     </section>
 
+    <section class="section success-section">
+        <div class="container">
+            <div class="section-header center">
+                <div class="section-label">Historias reales</div>
+                <h2 class="section-title">Ya encontraron su <em>hogar</em></h2>
+                <p class="section-subtitle">Cada adopción es una historia de amor que empieza aquí. Estas son algunas de las que más nos llenan el corazón.</p>
+            </div>
+
+            <div class="success-grid">
+
+                <div class="success-card">
+                    <div class="success-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?q=80&w=600&auto=format&fit=crop" alt="Perro adoptado feliz">
+                        <div class="success-badge"><i class="fas fa-home"></i> Adoptado</div>
+                    </div>
+                    <div class="success-body">
+                        <p class="success-name">Bruno</p>
+                        <p class="success-quote">"Llegó asustado y en 3 semanas ya dormía en nuestra cama. No imaginamos la vida sin él." 🐾</p>
+                        <p class="success-meta"><i class="fas fa-map-marker-alt"></i> Familia Rodríguez · San Vicente de Cañete</p>
+                    </div>
+                </div>
+
+                <div class="success-card">
+                    <div class="success-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?q=80&w=600&auto=format&fit=crop" alt="Perro Golden adoptado">
+                        <div class="success-badge"><i class="fas fa-home"></i> Adoptado</div>
+                    </div>
+                    <div class="success-body">
+                        <p class="success-name">Loki</p>
+                        <p class="success-quote">"Mi hijo lo pidió de cumpleaños y fue la mejor decisión que tomamos como familia." 🐶</p>
+                        <p class="success-meta"><i class="fas fa-map-marker-alt"></i> Familia Huanca · Lima</p>
+                    </div>
+                </div>
+
+                <div class="success-card">
+                    <div class="success-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=600&auto=format&fit=crop" alt="Gato adoptado feliz">
+                        <div class="success-badge success-badge--cat"><i class="fas fa-home"></i> Adoptado</div>
+                    </div>
+                    <div class="success-body">
+                        <p class="success-name">Mochi</p>
+                        <p class="success-quote">"Vivía sola y él llenó mi departamento de vida. Ronronea cada vez que llego a casa." 🐱</p>
+                        <p class="success-meta"><i class="fas fa-map-marker-alt"></i> Valeria · Miraflores, Lima</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="success-cta">
+                <p>¿Tu historia también podría estar aquí?</p>
+                <a href="paginas/adopta.html" class="btn btn-primary">Ver peluditos disponibles <i class="fas fa-paw"></i></a>
+            </div>
+        </div>
+    </section>
+
     <section id="ayuda" class="section">
         <div class="container">
             <div class="section-header center">
@@ -183,11 +249,11 @@
                     <ul class="info-list">
                         <li>
                             <div class="icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
-                            Calle Rescate #123, Lima
+                            San Vicente de Cañete, Lima
                         </li>
                         <li>
                             <div class="icon-wrap"><i class="fas fa-phone-alt"></i></div>
-                            +51 123 456 789
+                            +51 922 544 533
                         </li>
                         <li>
                             <div class="icon-wrap"><i class="fas fa-envelope"></i></div>
@@ -195,9 +261,9 @@
                         </li>
                     </ul>
                     <div class="social-links">
-                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100064803426751" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://maps.app.goo.gl/gx6Cfb8G172Zu1BL9" target="_blank" rel="noopener" title="Ubicación en Maps"><i class="fas fa-map-marker-alt"></i></a>
+                        <a href="https://wa.me/51922544533?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Abrigando%20A%20Los%20Ca%C3%B1eta%C3%B1itos%20%F0%9F%90%BE" target="_blank" rel="noopener" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <form class="contact-form" id="contactForm">
@@ -205,7 +271,7 @@
                         <input type="text" placeholder="Tu Nombre" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Tu Email" required>
+                        <input type="tel" placeholder="Tu Teléfono / WhatsApp" required>
                     </div>
                     <div class="form-group">
                         <textarea rows="4" placeholder="Tu Mensaje" required></textarea>
@@ -216,11 +282,59 @@
         </div>
     </section>
 
-    <footer class="main-footer">
-        <div class="container">
+        <footer class="main-footer">
+        <div class="container footer-inner">
+
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <img src="img/LogoAbrigando.jpg" alt="Logo Abrigando">
+                    <span>Abrigando A Los Cañetañitos</span>
+                </a>
+                <p class="footer-tagline">Rescatamos, rehabilitamos y buscamos hogares amorosos para perritos y gatitos desde 2015.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/profile.php?id=100064803426751" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://maps.app.goo.gl/gx6Cfb8G172Zu1BL9" target="_blank" rel="noopener" title="Ubicación"><i class="fas fa-map-marker-alt"></i></a>
+                    <a href="https://wa.me/51922544533" target="_blank" rel="noopener" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Páginas</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="paginas/voluntarios.html">Voluntarios</a></li>
+                    <li><a href="paginas/adopta.html">Adopta</a></li>
+                    <li><a href="paginas/apadrina.html">Apadrina</a></li>
+                    <li><a href="paginas/donaciones.html">Donaciones</a></li>
+                    <li><a href="paginas/hogarTemporal.html">Hogar Temporal</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> San Vicente de Cañete, Lima</li>
+                    <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/51922544533">+51 922 544 533</a></li>
+                    <li><i class="fas fa-envelope"></i> contacto@abrigando.org</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
             <p>&copy; 2025 Abrigando A Los Cañetañitos. Hecho con <i class="fas fa-heart"></i> por voluntarios.</p>
         </div>
     </footer>
+
+
+    <!-- Botón flotante WhatsApp -->
+    <a href="https://wa.me/51922544533?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Abrigando%20A%20Los%20Ca%C3%B1eta%C3%B1itos%20%F0%9F%90%BE"
+       target="_blank"
+       rel="noopener"
+       class="whatsapp-float"
+       aria-label="Contactar por WhatsApp">
+        <span class="wa-tooltip">¡Escríbenos!</span>
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <script src="js/main.js"></script>
 </body>
