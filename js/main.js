@@ -20,6 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Cerrar menú al hacer scroll
+    window.addEventListener('scroll', () => {
+        if (navLinks.classList.contains('active')) {
+            navLinks.classList.remove('active');
+        }
+    }, { passive: true });
+
     // Cerrar menú al hacer clic en un enlace (Mobile)
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
