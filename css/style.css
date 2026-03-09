@@ -237,23 +237,49 @@ img { max-width: 100%; display: block; }
 }
 .mobile-menu-btn:hover { background: var(--amber-glow); }
 
+/* Breadcrumb integrado al pie del page-header */
 .breadcrumbs {
   position: absolute;
-  top: 110px;
-  left: 5%;
+  bottom: 0;
+  left: 0;
+  right: 0;
   z-index: 10;
-  font-size: 0.85rem;
+  background: rgba(10, 7, 4, 0.45);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.breadcrumbs .container {
   display: flex;
-  gap: 6px;
   align-items: center;
+  gap: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  flex-wrap: wrap;
 }
-.breadcrumbs a, .breadcrumbs span, .breadcrumbs i {
-  color: rgba(255,255,255,0.85);
-  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+
+.breadcrumbs a {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.6);
+  transition: color 0.25s ease;
+  letter-spacing: 0.01em;
 }
+
 .breadcrumbs a:hover { color: var(--amber-light); }
-.breadcrumbs span.current { color: var(--amber-light) !important; font-weight: 700; }
-.breadcrumbs i { font-size: 0.65rem; opacity: 0.5; }
+
+.breadcrumbs .bc-sep {
+  font-size: 0.55rem;
+  color: rgba(255,255,255,0.25);
+}
+
+.breadcrumbs span.current {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--amber-light);
+  letter-spacing: 0.01em;
+}
 
 /* =========================================
    5. HERO
@@ -1079,8 +1105,10 @@ img { max-width: 100%; display: block; }
   .page-header    { padding: 140px 0 60px; min-height: 320px; }
   .page-header .section-title { font-size: clamp(1.6rem, 6vw, 2.4rem); }
 
-  /* BREADCRUMBS — ajuste para no solaparse con la navbar */
-  .breadcrumbs    { top: 86px; left: 18px; font-size: 0.78rem; }
+  /* BREADCRUMBS — en móvil texto un poco más pequeño */
+  .breadcrumbs .container { padding-top: 10px; padding-bottom: 10px; gap: 6px; }
+  .breadcrumbs a,
+  .breadcrumbs span.current { font-size: 0.75rem; }
 
   /* DONACIONES — banco cards en 1 columna */
   .bank-grid      { grid-template-columns: 1fr; }
