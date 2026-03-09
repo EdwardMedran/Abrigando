@@ -735,7 +735,15 @@ img { max-width: 100%; display: block; }
 /* =========================================
    10. FOOTER
    ========================================= */
-/* main-footer — ver bloque FOOTER ENRIQUECIDO al final */
+.main-footer {
+  background: var(--dark-mid);
+  color: rgba(255,255,255,0.45);
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.875rem;
+}
+
+.main-footer i { color: var(--amber-light); }
 
 /* =========================================
    11. PÁGINA GALERÍA / ADOPTA
@@ -1502,10 +1510,7 @@ img { max-width: 100%; height: auto; }
    CORRECCIONES FINALES MOBILE v6
    ========================================= */
 
-/* Evitar que el botón flotante tape el footer en móvil */
 @media (max-width: 768px) {
-  /* Espacio inferior para no tapar contenido con el botón flotante */
-  .main-footer { padding-bottom: 2rem; }
 
   /* Navbar: asegurar que el dropdown no quede cortado por overflow */
   .navbar { overflow: visible; }
@@ -1635,220 +1640,6 @@ img { max-width: 100%; height: auto; }
   .energy-label  { font-size: 0.7rem; }
   .energy-dot    { width: 9px; height: 9px; }
 }
-/* =========================================
-   FOOTER ENRIQUECIDO
-   ========================================= */
-.main-footer {
-  background: var(--dark);
-  color: rgba(255,255,255,0.55);
-}
-
-/* ── Grid principal: 3 columnas en desktop ── */
-.footer-inner {
-  display: grid;
-  grid-template-columns: 1.8fr 1fr 1.2fr;
-  gap: 56px;
-  padding: 56px 0 40px;
-  border-bottom: 1px solid rgba(255,255,255,0.07);
-  align-items: start;
-}
-
-/* ── Columna 1: Brand ── */
-.footer-brand { display: flex; flex-direction: column; }
-
-.footer-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  margin-bottom: 12px;
-}
-
-.footer-logo img {
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-
-.footer-logo span {
-  font-family: var(--font-display);
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--white);
-  line-height: 1.2;
-}
-
-.footer-tagline {
-  font-size: 0.84rem;
-  line-height: 1.75;
-  color: rgba(255,255,255,0.42);
-  margin-bottom: 20px;
-}
-
-.footer-social {
-  display: flex;
-  gap: 8px;
-}
-
-.footer-social a {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255,255,255,0.55);
-  font-size: 0.82rem;
-  text-decoration: none;
-  transition: var(--transition);
-  flex-shrink: 0;
-}
-
-.footer-social a:hover {
-  background: var(--amber);
-  border-color: var(--amber);
-  color: #fff;
-  transform: translateY(-2px);
-}
-
-/* ── Columnas 2 y 3: títulos ── */
-.footer-links h4,
-.footer-contact h4 {
-  font-family: var(--font-body);
-  font-size: 0.68rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: var(--amber-light);
-  margin-bottom: 18px;
-}
-
-/* ── Columna 2: Links ── */
-.footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.footer-links a {
-  color: rgba(255,255,255,0.48);
-  text-decoration: none;
-  font-size: 0.88rem;
-  transition: color 0.2s, padding-left 0.2s;
-  display: block;
-}
-
-.footer-links a:hover {
-  color: var(--amber-light);
-  padding-left: 4px;
-}
-
-/* ── Columna 3: Contacto ── */
-.footer-contact ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.footer-contact li {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  font-size: 0.85rem;
-  color: rgba(255,255,255,0.48);
-  line-height: 1.5;
-}
-
-.footer-contact li i {
-  color: var(--amber);
-  font-size: 0.8rem;
-  margin-top: 3px;
-  flex-shrink: 0;
-  width: 14px;
-  text-align: center;
-}
-
-.footer-contact a {
-  color: rgba(255,255,255,0.48);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.footer-contact a:hover { color: var(--amber-light); }
-
-/* ── Franja copyright ── */
-.footer-bottom {
-  text-align: center;
-  padding: 18px 0;
-}
-
-.footer-bottom p {
-  font-size: 0.77rem;
-  color: rgba(255,255,255,0.25);
-}
-
-.footer-bottom i { color: var(--amber); }
-
-/* ══════════════════════════════════════════
-   FOOTER RESPONSIVE
-   ══════════════════════════════════════════ */
-
-/* Tablet (≤ 900px): brand ocupa ancho completo, links y contacto en 2 columnas */
-@media (max-width: 900px) {
-  .footer-inner {
-    grid-template-columns: 1fr 1fr;
-    gap: 36px 40px;
-    padding: 44px 0 32px;
-  }
-  .footer-brand {
-    grid-column: 1 / -1;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 0 40px;
-  }
-  .footer-logo-wrap {
-    flex: 1 1 200px;
-  }
-  .footer-tagline { max-width: 360px; }
-}
-
-/* Móvil (≤ 600px): todo en 1 columna, alineado a la izquierda */
-@media (max-width: 600px) {
-  .footer-inner {
-    grid-template-columns: 1fr;
-    gap: 28px;
-    padding: 36px 0 24px;
-  }
-
-  .footer-brand {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .footer-tagline { max-width: 100%; }
-
-  /* Links y contacto: una columna, alineado izquierda */
-  .footer-links ul  { gap: 10px; }
-  .footer-contact ul { gap: 12px; }
-  .footer-links a   { font-size: 0.9rem; }
-  .footer-contact li { font-size: 0.87rem; }
-
-  /* Copyright: espacio extra para botones flotantes */
-  .footer-bottom { padding-bottom: 80px; }
-}
-
-
 /* =========================================
    BOTÓN VOLVER ARRIBA
    ========================================= */
